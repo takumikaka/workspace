@@ -124,7 +124,6 @@ class Action(object):
         new_info = self._merge_info(houseinfo_split, followInfo_split)
         total_info = self._merge_info(new_info, housePrice)
         print(total_info)
-	print('test')
 
 ####################################################################
 
