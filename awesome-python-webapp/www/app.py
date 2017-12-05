@@ -1,5 +1,11 @@
-#!usr/bin/python3
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
+
+__author__ = 'Michael Liao'
+
+'''
+async web application.
+'''
 
 import logging; logging.basicConfig(level=logging.INFO)
 
@@ -10,7 +16,7 @@ from aiohttp import web
 from jinja2 import Environment, FileSystemLoader
 
 import orm
-from coroweb import add_route, add_static
+from coroweb import add_routes, add_static
 
 def init_jinja2(app, **kw):
     logging.info('init jinja2...')
@@ -75,42 +81,43 @@ async def response_factory(app, handler):
                 resp.content_type = 'application/json;charset=utf-8'
                 return resp
             else:
-                resp = web.Response(body=app['__template__'].get_template(template).render(**r).encode('utf-8'))
+                resp = web.Response(body=app['__templating__'].get_template(template).render(**r).encode('utf-8'))
                 resp.content_type = 'text/html;charset=utf-8'
                 return resp
-            if isinstance(r, int) and r >= 100 and r < 600:
-                return web.Response(r)
-            if isinstance(r, tuple) and len(r) == 2:
-                t, m = r
-                if isinstance(t, int) and t >= 100 and t < 600:
-                    return web.Response(t, str(m))
-            # default
-            resp = web.Response(body=str(r).encode('utf-8'))
-            resp.content_type = 'text/plain;charset=utf-8'
-            return resp
+        if isinstance(r, int) and r >= 100 and r < 600:
+            return web.Response(r)
+        if isinstance(r, tuple) and len(r) == 2:
+            t, m = r
+            if isinstance(t, int) and t >= 100 and t < 600:
+                return web.Response(t, str(m))
+        # default:
+        resp = web.Response(body=str(r).encode('utf-8'))
+        resp.content_type = 'text/plain;charset=utf-8'
+        return resp
     return response
 
-def datetiem_filter(t):
+def datetime_filter(t):
     delta = int(time.time() - t)
     if delta < 60:
         return u'1分钟前'
     if delta < 3600:
         return u'%s分钟前' % (delta // 60)
     if delta < 86400:
-        return u'%s分钟前' % (delta // 3600)
+        return u'%s小时前' % (delta // 3600)
     if delta < 604800:
         return u'%s天前' % (delta // 86400)
     dt = datetime.fromtimestamp(t)
-    return u'%s年%s月%s日' % (dt.yesr, dt.month, dt.day)
+    return u'%s年%s月%s日' % (dt.year, dt.month, dt.day)
 
 async def init(loop):
     await orm.create_pool(loop=loop, host='127.0.0.1', port=3306, user='www', password='www', db='awesome')
     app = web.Application(loop=loop, middlewares=[
         logger_factory, response_factory
     ])
-    init_jinja2(app, 'handler')
+    init_jinja2(app, filters=dict(datetime=datetime_filter))
+    add_routes(app, 'handlers')
     add_static(app)
-    srv =await loop.create_server(app.make_handler(), '127.0.0.1', 9000)
+    srv = await loop.create_server(app.make_handler(), '127.0.0.1', 9000)
     logging.info('server started at http://127.0.0.1:9000...')
     return srv
 
