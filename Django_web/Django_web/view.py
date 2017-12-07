@@ -6,5 +6,5 @@ from django.shortcuts import render
 
 def hello(request):
     context = {}
-    context['hello'] = 'Hello World!'
+    context['hello'] = 'This is test words!'
     return render(request, 'hello.html', context)
