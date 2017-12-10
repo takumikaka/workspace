@@ -13,10 +13,12 @@ Including another URLconf
     1. Add an import:  from blog import urls as blog_urls
     2. Add a URL to urlpatterns:  url(r'^blog/', include(blog_urls))
 """
-from django.conf.urls import *
-from . import view, testdb
+from django.conf.urls import url
+from . import view, testdb, search
 
 urlpatterns = [
     url(r'^hello$', view.hello),
     url(r'^testdb$', testdb.testdb),
+    url(r'^search-form&', search.search_form),
+    url(r'^search$', search.search),
 ]
