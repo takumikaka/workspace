@@ -1,2 +1,6 @@
 remove old django: python -c "import django; print(django.__path__)"
 install django: sudo pip3 install django
+
+# install Python mysqlclient “OSError: mysql_config not found” info
+1.apt-get install libmysqlclient-dev python3-dev
+2.sudo pip3 install mysqlclient
