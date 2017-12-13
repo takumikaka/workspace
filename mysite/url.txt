@@ -4,3 +4,8 @@ install django: sudo pip3 install django
 # install Python mysqlclient “OSError: mysql_config not found” info
 1.apt-get install libmysqlclient-dev python3-dev
 2.sudo pip3 install mysqlclient
+
+# del steam
+1.find ubuntu softcenter
+2.search “steam”
+3.removie it
