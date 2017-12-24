@@ -9,3 +9,6 @@ install django: sudo pip3 install django
 1.find ubuntu softcenter
 2.search “steam”
 3.removie it
+
+#create jira
+check for this:https://www.zmrenwu.com/post/2/
