@@ -66,8 +66,7 @@ class QuestionIndexViewTests(TestCase):
 class QuestonDetailViewTests(TestCase):
     def test_future_question(self):
         future_question = create_question(question_text='Future question.', days=5)
-        url = reverse('polls:detail', args=(future_question.id,)
-        response = self.client.get(url)
+        url = reverse('polls:detail', args=(future_question.id,))
         response = self.client.get(url)
         self.assertEqual(response.status_code, 404)
 
