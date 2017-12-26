@@ -10,5 +10,17 @@ install django: sudo pip3 install django
 2.search “steam”
 3.removie it
 
-#create jira
+# create jira
 check for this:https://www.zmrenwu.com/post/2/
+
+# For Ubuntu users
+sudo apt-get install python3-pip
+# Prefix the next command with sudo if it gives a permission denied error
+pip3 install virtualenv
+virtualenv --python=`which python3` ~/.virtualenvs/djangodev
+
+# Start virtualenvs
+source ~/.virtualenvs/djangodev/bin/activate
+
+# Quit virtualenvs
+deactivate
