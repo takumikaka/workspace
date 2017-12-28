@@ -24,3 +24,6 @@ source ~/.virtualenvs/djangodev/bin/activate
 
 # Quit virtualenvs
 deactivate
+
+# create database for mysql
+CREATE DATABASE <database name>;
