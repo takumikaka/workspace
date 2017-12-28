@@ -3,23 +3,19 @@ from django.contrib.auth.models import User
 
 # Create your models here.
 
-class Bugid(models.Model):
-
-    name = models.IntegerField(max_length=9999)
-
 class Category(models.Model):
 
     name = models.CharField(max_length=100)
 
-class Buglevel(models.Model):
+class Tag(models.Model):
 
-    name = models.CharField(max_length=30)
+    name = models.CharField(max_length=100)
 
-class Bugcontext(models.Model):
+class Post(models.Model):
 
-    bug_title = models.CharField(max_length=100)
+    title = models.CharField(max_length=70)
 
-    bug_body = models.TextField()
+    body = models.TextField()
 
     created_time = models.DateTimeField()
     modified_time = models.DateTimeField()
@@ -30,6 +26,11 @@ class Bugcontext(models.Model):
         'Category',
         on_delete=models.CASCADE,
     )
-    bug_levels = models.ManyToManyField(Buglevel, blank=True)
+    tags = models.ManyToManyField(Tag, blank=True)
 
-    #author = models.ForeignKey(User)
+    '''
+    author = models.ForeignKey(
+        'User',
+        on_delete=models.CASCADE,
+    )
+    '''
