@@ -25,7 +25,13 @@ class Bugcontext(models.Model):
 
     bug_title = models.CharField(max_length=100)
 
+    def __str__(self):
+        return self.bug_title
+
     bug_body = models.TextField()
+
+    #def __str__(self):
+    #    return self.bug_body
 
     created_time = models.DateTimeField()
     modified_time = models.DateTimeField()
