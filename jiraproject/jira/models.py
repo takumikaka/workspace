@@ -5,15 +5,21 @@ from django.contrib.auth.models import User
 
 class Bugid(models.Model):
 
-    name = models.IntegerField(default=0)
+    bugid_id = models.IntegerField(default=0)
 
 class Category(models.Model):
 
-    name = models.CharField(max_length=100)
+    category_text = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.category_text
 
 class Buglevel(models.Model):
 
-    name = models.CharField(max_length=30)
+    buglevel_text = models.CharField(max_length=30)
+
+    def __str__(self):
+        return self.buglevel_text
 
 class Bugcontext(models.Model):
 
