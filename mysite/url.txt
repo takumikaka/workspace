@@ -26,4 +26,20 @@ source ~/.virtualenvs/djangodev/bin/activate
 deactivate
 
 # create database for mysql
-CREATE DATABASE <database name>;
+CREATE DATABASE <your database's name>;
+
+# delete database for mysql
+drop database <your database's name>;
+
+# some commands for mysql
+show databases;
+use <your database's name>;
+show tables;
+select * from <your table's name>;
+desc <your tables's name>;
+
+# new database
+python manage.py migrate
+python manage.py makemigrations <your app's name>
+python manage.py sqlmigrate <your app's name> <id>
+python manage.py migrate
