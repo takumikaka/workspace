@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block titles %}jira titles{% endblock %}
+
+{% block content %}
+<div class="row text-center vertical-middle-sm">
+    <h1>Jire Test1</h1>
+</div>
+<div class="row">
+    <div class="col-xs-12 col-md-8">
+    <ul>
+    {% for title in Bugcontext %}
+        <li>{{ title.bug_title }}</li>
+    {% endfor %}
+    </ul>
+    </div>
+    <div class="col-xs-6 col-md-4">
+    <h2>Word Test2</h2>
+    <p>hello python! hello django!</p>
+    <img width="200px" src="http://www.mrwallpaper.com/wallpapers/Fluffy-cat.jpg">
+    </div>
+</div>
+{% endblock %}
