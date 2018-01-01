@@ -36,7 +36,7 @@
     <div class="col-xs-12 col-md-8">
     <ul>
     {% for jira in jiras %}
-        <li>{{ jira.bug_title }}</li>
+        <li><a href="{{ jira.id }}">{{ jira.bug_title }}</a></li>
     {% endfor %}
     </ul>
     </div>

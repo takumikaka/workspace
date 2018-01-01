@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}jira context{% endblock %}
+
+{% block content %}
+<div class="row text-center vertical-middle-sm">
+    <h1>{{ context.bug_title }}</h1>
+</div>
+<div class="row">
+    <div class="col-xs-12 col-md-8">
+        <p class="text-center"><span>{{ context.bug_author.username }}</span><span
+             sytle="margin-left:20px">{{ publish }}</span></p>
+<div>{{ context.bug_body }}</div>
+</div>
+    <div  class="col-xs-6 col-md-4">
+        <h2>Word Test2</h2>
+        <p>hello python! hello django!</p>
+        <img width="200px" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1514743628764&di=07abc90e787e38ebe591cc9150d128dc&imgtype=0&src=http%3A%2F%2Fpic22.nipic.com%2F20120724%2F3354124_193041099386_2.jpg">
+    </div>
+</div>
+{% endblock %}
