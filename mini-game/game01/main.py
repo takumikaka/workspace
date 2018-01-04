@@ -47,6 +47,11 @@ class Action(object):
         key = key_list[0]
         value = dict[key]
         print(value)
+        str = input("Enter the str:")
+        if str == key:
+            print("successful!")
+        else:
+            print("error")
 
 
 ##############################################################################
