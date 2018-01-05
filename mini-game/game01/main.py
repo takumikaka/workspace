@@ -14,7 +14,7 @@ def yellow(text):
 #############################################################################
 '''
 1. record life
-2. get words and random.words
+2. get words and random.words---done
 3. record scores
 4. game start and game end
 '''
@@ -64,6 +64,10 @@ class Action(object):
         randomlist = random.sample(list, n)
         return randomlist
 
+    def _Unduplition_list(self, l1):
+        unduplicatlist = list(set(l1))
+        return unduplicatlist
+
     def run(self):
         list = self._Base_List()
         dict = self._Base_Dict()
@@ -73,7 +77,8 @@ class Action(object):
         changekeytolist = self._Change_KeytoList(key)
         randombaselist = self._Random_BaseList(list)
         choicelist = self._Get_ChoicList(changekeytolist, randombaselist)
-        print(choicelist)
+        unduplicatlist = self._Unduplition_list(choicelist)
+        print(unduplicatlist)
         '''
         value = dict[key]
         print(value)
