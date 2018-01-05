@@ -52,3 +52,9 @@ http://www.runoob.com/bootstrap/bootstrap-typography.html
 
 # How to install virtualenvs
 https://docs.djangoproject.com/en/2.0/intro/contributing/
+
+# install vim
+https://jingyan.baidu.com/article/046a7b3efd165bf9c27fa915.html
+
+# vim config
+https://github.com/wklken/k-vim
