@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
-import time
+from csv2dict import row_csv2dict
 
-for i in range(1, 4):
-    print(4 - i)
-    time.sleep(1)
+dict = row_csv2dict("game01.csv")
+
+print(dict)
