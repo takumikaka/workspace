@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 import random
+import time
 
 ############################################################################
 def red(text):
@@ -23,6 +24,11 @@ class Action(object):
 
     def __init__(self):
         pass
+
+    def _Clock(self):
+        for i in range(1, 4):
+            print(4 - i)
+            time.sleep(1)
 
     # def Base_list
     def _Base_List(self):
@@ -68,27 +74,67 @@ class Action(object):
         unduplicatlist = list(set(l1))
         return unduplicatlist
 
-    def run(self):
-        list = self._Base_List()
-        dict = self._Base_Dict()
-        key_list = self._Get_KeyList(dict)
-        random.shuffle(key_list)
-        key = key_list[0]
-        changekeytolist = self._Change_KeytoList(key)
-        randombaselist = self._Random_BaseList(list)
-        choicelist = self._Get_ChoicList(changekeytolist, randombaselist)
-        unduplicatlist = self._Unduplition_list(choicelist)
-        print(unduplicatlist)
-        '''
-        value = dict[key]
-        print(value)
-        str = input("Enter the str:")
-        if str == key:
-            print("successful!")
+    def _Check_life(self, life, life_flog):
+        if life_flog == False:
+            life = life - 1
         else:
-            print("error")
-        '''
+            pass
+        return life
 
+    def _Check_score(self, score, life_flog):
+        if life_flog == True:
+            score = score + 50
+        else:
+            pass
+        return score
+
+    def run(self):
+        print("Are your ready!")
+        self._Clock()
+        print("Game Start!")
+        print("*"*80)
+        life = 3
+        life_flog = True
+        score = 0
+
+        while life > 0:
+            print("Your Life is: {0}".format(life))
+            print("Your Score is: {0}\n".format(score))
+            time.sleep(1)
+            print("Next Stage!")
+            self._Clock()
+            list = self._Base_List()
+            dict = self._Base_Dict()
+            key_list = self._Get_KeyList(dict)
+            random.shuffle(key_list)
+            key = key_list[0]
+            changekeytolist = self._Change_KeytoList(key)
+            randombaselist = self._Random_BaseList(list)
+            choicelist = self._Get_ChoicList(changekeytolist, randombaselist)
+            unduplicatlist = self._Unduplition_list(choicelist)
+            print("The choice list: {0}".format(unduplicatlist))
+            value = dict[key]
+            print("The sentence: {0}".format(value))
+            str = input("Enter your answer:")
+            if str == key:
+                print("Your are very clever! The answer is: {0}".format(key))
+                print("*"*80)
+                time.sleep(1)
+                life = self._Check_life(life,life_flog)
+                score = self._Check_score(score, life_flog)
+            else:
+                print("What a pity! The answer is: {0}".format(key))
+                print("*"*80)
+                time.sleep(1)
+                #print("Next Stage!")
+                #self._Clock()
+                life_flog = False
+                life = self._Check_life(life, life_flog)
+                score = self._Check_score(score, life_flog)
+
+        time.sleep(1)
+        print("Game over!")
+        print("Your score is: {0}".format(score))
 
 ##############################################################################
 
