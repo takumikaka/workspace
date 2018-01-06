@@ -18,8 +18,8 @@ def yellow(text):
 2. get words and random.words---done
 3. record scores---done
 4. game start and game end---done
-5. first game display
-6. end game content
+5. first game display---done
+6. end game content---done
 7. read csv
 '''
 
@@ -32,6 +32,15 @@ class Action(object):
         for i in range(1, 4):
             print(4 - i)
             time.sleep(1)
+
+    def _Check_FirstorNot(self, first_flog):
+        if first_flog == False:
+            time.sleep(1)
+            print("Next Stage!")
+            self._Clock()
+        else:
+            time.sleep(1)
+
 
     # def Base_list
     def _Base_List(self):
@@ -91,7 +100,16 @@ class Action(object):
             pass
         return score
 
+    def _Check_level(self, score):
+        if score >= 500:
+            print("That's great! You're more than 99%.")
+        elif score >= 200 and score < 500:
+            print("Come on! You're more than 70%.")
+        else:
+            print("What a pity! You're more than 20%.")
+
     def run(self):
+        first_flog = True
         print("Are your ready!")
         self._Clock()
         print("Game Start!")
@@ -103,9 +121,7 @@ class Action(object):
         while life > 0:
             print("Your Life is: {0}".format(life))
             print("Your Score is: {0}\n".format(score))
-            time.sleep(1)
-            print("Next Stage!")
-            self._Clock()
+            self._Check_FirstorNot(first_flog)
             list = self._Base_List()
             dict = self._Base_Dict()
             key_list = self._Get_KeyList(dict)
@@ -125,19 +141,20 @@ class Action(object):
                 time.sleep(1)
                 life = self._Check_life(life,life_flog)
                 score = self._Check_score(score, life_flog)
+                first_flog = False
             else:
                 print("What a pity! The answer is: {0}".format(key))
                 print("*"*80)
                 time.sleep(1)
-                #print("Next Stage!")
-                #self._Clock()
                 life_flog = False
                 life = self._Check_life(life, life_flog)
                 score = self._Check_score(score, life_flog)
+                first_flog = False
 
         time.sleep(1)
         print("Game over!")
         print("Your score is: {0}".format(score))
+        self._Check_level(score)
 
 ##############################################################################
 
