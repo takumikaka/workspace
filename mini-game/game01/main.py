@@ -14,10 +14,13 @@ def yellow(text):
 	return '\033[93m{0}\033[00m'.format(text)
 #############################################################################
 '''
-1. record life
+1. record life---done
 2. get words and random.words---done
-3. record scores
-4. game start and game end
+3. record scores---done
+4. game start and game end---done
+5. first game display
+6. end game content
+7. read csv
 '''
 
 class Action(object):
