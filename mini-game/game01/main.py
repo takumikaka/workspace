@@ -2,6 +2,7 @@
 
 import random
 import time
+from csv2dict import row_csv2dict
 
 ############################################################################
 def red(text):
@@ -20,7 +21,7 @@ def yellow(text):
 4. game start and game end---done
 5. first game display---done
 6. end game content---done
-7. read csv
+7. read csv---done
 '''
 
 class Action(object):
@@ -123,7 +124,8 @@ class Action(object):
             print("Your Score is: {0}\n".format(score))
             self._Check_FirstorNot(first_flog)
             list = self._Base_List()
-            dict = self._Base_Dict()
+            #dict = self._Base_Dict()
+            dict = row_csv2dict("game01.csv")
             key_list = self._Get_KeyList(dict)
             random.shuffle(key_list)
             key = key_list[0]
