@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
 from .models import BlogArticles
 
@@ -8,7 +8,8 @@ def blog_title(request):
     blogs = BlogArticles.objects.all()
     return render(request, "blog/titles.html", {"blogs": blogs})
 
-def blog_context(request, context_id):
-    context = BlogArticles.objects.get(id=context_id)
-    pub = context.publish
-    return render(request, "blog/content.html", {"context": context, "publish": pub})
+def blog_article(request, article_id):
+    #article = BlogArticles.objects.get(id=article_id)
+    article = get_object_or_404(BlogArticles, id=article_id)
+    pub = article.publish
+    return render(request, "blog/content.html", {"article": article, "publish": pub})
