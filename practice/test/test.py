@@ -86,8 +86,6 @@ print(s.score)
 
 ##########################################################################
 
-'''
-
 class Apple(object):
     name = 'apple'
 
@@ -96,3 +94,30 @@ p2 = Apple()
 p1.name = 'orange'
 print(p1.name)
 print(p2.name)
+
+############################################################################
+'''
+
+import ssl
+import urllib.request
+import os
+from bs4 import BeautifulSoup
+
+def write_file(html):
+    file = open("test.html", "wb")
+    file.write(html)
+    file.close()
+
+context = ssl._create_unverified_context()
+url = "https://cd.lianjia.com/ershoufang/rs%E9%94%A6%E6%B1%9F%E5%9F%8E%E5%B8%82%E8%8A%B1%E5%9B%AD%E4%B8%89%E6%9C%9F/"
+request = urllib.request.Request(url)
+response = urllib.request.urlopen(request, context=context)
+html = response.read()
+#print(html.decode("utf-8"))
+soup = BeautifulSoup(html, 'lxml')
+print(type(soup))
+file = write_file(html)
+tag = soup.body
+#print(tag)
+
+##############################################################################
