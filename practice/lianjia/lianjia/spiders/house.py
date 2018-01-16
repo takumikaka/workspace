@@ -1,13 +1,22 @@
-# -*- coding: utf-8 -*-
-import scrapy
+from scrapy.spiders import Spider
+from scrapy.http import Request
+from scrapy.selector import Selector
+from scrapy.spiders import Rule,CrawlSpider
+from scrapy.linkextractors import LinkExtractor
 
-#获取区域和面积
-#"body//li[@class='clear']//div[@class='houseInfo']//text()"
+from ..items import LianjiaItem
 
-class HouseSpider(scrapy.Spider):
-    name = 'house'
-    allowed_domains = ['cd.lianjia.com']
-    start_urls = ['https://cd.lianjia.com/ershoufang/c1611047140791/?sug=锦江城市花园三期']
+class HouseSpider(CrawlSpider):
+
+    name="house"
+    download_delay=1
+    allowed_domains=[]
+    start_urls=[
+        'https://cd.lianjia.com/ershoufang/chuanshi'
+    ]
+    rules=(
+        Rule(LinkExtractor(allow=(r'https://cd.lianjia.com/ershoufang/chuanshi/pg\d')),callback='parse_item',follow=True),
+    )
 
     def _fun_list(self, list, str):
         new_list = []
@@ -23,7 +32,10 @@ class HouseSpider(scrapy.Spider):
             t_list.append(i)
         return t_list
 
-    def parse(self, response):
+
+    def parse_item(self,response):
+        sel=Selector(response)
+
         titles = response.xpath('body//div[@class="info clear"]//div[@class="title"]//a//text()').extract()
         title_list = []
         self._pop_list(title_list, titles)
@@ -40,3 +52,15 @@ class HouseSpider(scrapy.Spider):
         sec_str = t_total_priceList[1]
         total_priceList = self._fun_list(t_total_priceList, sec_str)
         print(total_priceList)
+        unit_prices = response.xpath("body//div[@class='unitPrice']//text()").extract()
+        unit_priceList = []
+        self._pop_list(unit_priceList, unit_prices)
+        print(unit_priceList)
+        followInfos = response.xpath("body//div[@class='followInfo']//text()").extract()
+        follow_infoList = []
+        self._pop_list(follow_infoList, followInfos)
+        print(follow_infoList)
+        linkInfos = response.xpath("body//div[@class='info clear']//div[@class='title']//a//@href").extract()
+        link_infoList = []
+        self._pop_list(link_infoList, linkInfos)
+        print(link_infoList)

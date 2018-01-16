@@ -96,7 +96,6 @@ print(p1.name)
 print(p2.name)
 
 ############################################################################
-'''
 
 import ssl
 import urllib.request
@@ -121,3 +120,10 @@ tag = soup.body
 #print(tag)
 
 ##############################################################################
+
+'''
+
+str = 'jinjiang'
+for num in range(1, 10):
+    url = "https://cd.lianjia.com/ershoufang/{0}/pg{1}/".format(str, num)
+    print(url)
