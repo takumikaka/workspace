@@ -1,21 +1,18 @@
-from scrapy.spiders import Spider
-from scrapy.http import Request
-from scrapy.selector import Selector
-from scrapy.spiders import Rule,CrawlSpider
+# -*- coding: utf-8 -*-
+import scrapy
+from scrapy.spiders import Rule, CrawlSpider
 from scrapy.linkextractors import LinkExtractor
 
-from ..items import LianjiaItem
+#获取区域和面积
+#"body//li[@class='clear']//div[@class='houseInfo']//text()"
 
-class HouseSpider(CrawlSpider):
+class HouseSpider(scrapy.Spider):
+    name = 'house'
+    allowed_domains = ['cd.lianjia.com']
+    start_urls = ['https://cd.lianjia.com/ershoufang/jinjiang']
 
-    name="house"
-    download_delay=1
-    allowed_domains=[]
-    start_urls=[
-        'https://cd.lianjia.com/ershoufang/chuanshi'
-    ]
-    rules=(
-        Rule(LinkExtractor(allow=(r'https://cd.lianjia.com/ershoufang/chuanshi/pg\d')),callback='parse_item',follow=True),
+    rules = (
+        Rule(LinkExtractor(allow=(r'https://cd.lianjia.com/ershoufang/jinjiang/pg\d')), callback='parse_item', follow=True),
     )
 
     def _fun_list(self, list, str):
@@ -32,10 +29,7 @@ class HouseSpider(CrawlSpider):
             t_list.append(i)
         return t_list
 
-
-    def parse_item(self,response):
-        sel=Selector(response)
-
+    def parse_item(self, response):
         titles = response.xpath('body//div[@class="info clear"]//div[@class="title"]//a//text()').extract()
         title_list = []
         self._pop_list(title_list, titles)
