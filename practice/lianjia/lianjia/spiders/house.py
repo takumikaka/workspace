@@ -4,7 +4,7 @@ from scrapy.selector import Selector
 from scrapy.spiders import Rule,CrawlSpider
 from scrapy.linkextractors import LinkExtractor
 
-from ..items import LianjiaItem
+from lianjia.items import LianjiaItem
 
 class HouseSpider(CrawlSpider):
 
@@ -35,7 +35,17 @@ class HouseSpider(CrawlSpider):
 
     def parse_item(self,response):
         sel=Selector(response)
+        item = LianjiaItem()
 
+        item['titles'] = sel.xpath('body//div[@class="info clear"]//div[@class="title"]//a//text()').extract()
+        item['areas'] = sel.xpath("body//div[@class='houseInfo']//text()").extract()
+        item['total_prices'] = sel.xpath("body//div[@class='totalPrice']//text()").extract()
+        item['unit_prices'] = sel.xpath("body//div[@class='unitPrice']//text()").extract()
+        item['followInfos'] = sel.xpath("body//div[@class='followInfo']//text()").extract()
+        item['linkInfos'] = sel.xpath("body//div[@class='info clear']//div[@class='title']//a//@href").extract()
+        return item
+
+        '''
         titles = response.xpath('body//div[@class="info clear"]//div[@class="title"]//a//text()').extract()
         title_list = []
         self._pop_list(title_list, titles)
@@ -64,3 +74,4 @@ class HouseSpider(CrawlSpider):
         link_infoList = []
         self._pop_list(link_infoList, linkInfos)
         print(link_infoList)
+        '''
