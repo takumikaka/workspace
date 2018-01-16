@@ -58,3 +58,6 @@ https://jingyan.baidu.com/article/046a7b3efd165bf9c27fa915.html
 
 # vim config
 https://github.com/wklken/k-vim
+
+# start mac-pro mysql server
+mysql.server start
