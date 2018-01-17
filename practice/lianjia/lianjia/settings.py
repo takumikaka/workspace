@@ -89,9 +89,11 @@ ROBOTSTXT_OBEY = False
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
-# start MySQL database configure setting
-MYSQL_HOST = 'localhost'
-MYSQL_DBNAME = 'ljscrapydb'
-MYSQL_USER = 'root'
-MYSQL_PASSWD = 'raspberry'
-# end MySQL database configure setting
+ITEM_PIPELINES = {
+    'lianjia.pipelines.LianjiaPipeline': 300,
+    }
+
+MONGODB_SERVER = "localhost"
+MONGODB_PORT = 27017
+MONGODB_DB = "Spider"
+MONGODB_COLLECTION = "bodys"
