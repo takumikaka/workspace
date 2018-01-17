@@ -72,3 +72,21 @@ https://github.com/wklken/k-vim
 
 # start mac-pro mysql server
 mysql.server start
+
+# how to start mongodb
+brew services start mongodb
+
+# go to mongodb shell
+mongo
+
+# show mongodb database
+show dbs
+
+# use some mongodb database
+use <database name>
+
+# check database collections
+show collections
+
+# print database data
+db.<table's name>.find()
