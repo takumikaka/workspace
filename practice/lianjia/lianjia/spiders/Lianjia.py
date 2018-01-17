@@ -19,4 +19,13 @@ class LianjiaSpider(scrapy.Spider):
                 "//div[@class='info clear']//div[@class='title']//text()").extract()
             item['total_price'] = body.xpath(
                 "//div[@class='totalPrice']//span//text()").extract()
+            item['area'] = body.xpath(
+                "//div[@class='houseInfo']//span[@class='houseIcon']/following::text()[2]").extract()
+            item['unit_price'] = body.xpath(
+                "//div[@class='priceInfo']//div[@class='unitPrice']//text()").extract()
+            item['followInfo'] = body.xpath(
+                "//div[@class='info clear']//div[@class='followInfo']//text()").extract()
+            item['linkInfo'] = body.xpath(
+                "//div[@class='info clear']//div[@class='title']//a//@href").extract()
+
         yield item

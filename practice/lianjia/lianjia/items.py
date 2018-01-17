@@ -12,4 +12,8 @@ class LianjiaItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
     title = scrapy.Field()
+    area = scrapy.Field()
     total_price = scrapy.Field()
+    unit_price = scrapy.Field()
+    followInfo = scrapy.Field()
+    linkInfo = scrapy.Field()
