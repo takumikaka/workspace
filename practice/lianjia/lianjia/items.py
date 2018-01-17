@@ -11,17 +11,5 @@ import scrapy
 class LianjiaItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
-    # 标签 小区 户型 面积 关注人数 带看人数 发布时间 价格 均价 详细链接 经纬度 城市
-
     title = scrapy.Field()
-    community = scrapy.Field()
-    model = scrapy.Field()
-    area = scrapy.Field()
-    focus_num = scrapy.Field()
-    watch_num = scrapy.Field()
-    time = scrapy.Field()
-    price = scrapy.Field()
-    average_price = scrapy.Field()
-    link = scrapy.Field()
-    Latitude = scrapy.Field()
-    city = scrapy.Field()
+    total_price = scrapy.Field()
