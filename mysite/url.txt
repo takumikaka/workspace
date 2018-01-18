@@ -90,3 +90,9 @@ show collections
 
 # print database data
 db.<table's name>.find()
+
+# Drop collection
+db.<collection name>.drop()
+
+# Import json file from mongodb
+mongoexport -d Spider -c chuanshi -o bodys.json
