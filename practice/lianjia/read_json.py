@@ -3,7 +3,8 @@
 import json
 
 def load():
-    with open('items.json') as json_file:
+    filename = input("Enter the json file name:")
+    with open(filename) as json_file:
         return json.load(json_file)
 
 if __name__ == "__main__":
