@@ -25,7 +25,7 @@ class LianjiaSpider(CrawlSpider):
         for body in bodys:
             item = LianjiaItem()
             item['title'] = body.xpath(
-                "//div[@class='info clear']//div[@class='title']//text()").extract()
+                "//div[@class='info clear']//div[@class='title']//a//text()").extract()
             item['total_price'] = body.xpath(
                 "//div[@class='totalPrice']//span//text()").extract()
             item['area'] = body.xpath(
