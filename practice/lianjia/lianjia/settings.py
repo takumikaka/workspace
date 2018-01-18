@@ -96,4 +96,5 @@ ITEM_PIPELINES = {
 MONGODB_SERVER = "localhost"
 MONGODB_PORT = 27017
 MONGODB_DB = "Spider"
-MONGODB_COLLECTION = "bodys"
+# 可以更改收集项
+MONGODB_COLLECTION = "chuanshi"
