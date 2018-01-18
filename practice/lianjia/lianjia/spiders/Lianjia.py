@@ -20,7 +20,6 @@ class LianjiaSpider(CrawlSpider):
 
     #def parse(self, response):
     def parse_item(self, response):
-        print('Test Info................')
         bodys = Selector(response).xpath("body//div[@class='clear']")
 
         for body in bodys:
