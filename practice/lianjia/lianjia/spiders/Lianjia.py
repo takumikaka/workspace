@@ -1,40 +1,57 @@
 # -*- coding: utf-8 -*-
 import scrapy
+import requests
+import re
+import time
+from lxml import etree
 from scrapy import Spider
 from scrapy.selector import Selector
 from lianjia.items import LianjiaItem
-from scrapy.spiders import Rule, CrawlSpider
-from scrapy.linkextractors import LinkExtractor
+#from scrapy_redis.spiders import RedisSpider
 
-class LianjiaSpider(CrawlSpider):
+class LianjiaSpider(Spider):
     name = 'Lianjia'
-    #allowed_domains = ['Lianjia.com']
-    allowed_domains = []
-    #url = 'https://cd.lianjia.com/ershoufang/c1611047140791/?sug=%E9%94%A6%E6%B1%9F%E5%9F%8E%E5%B8%82%E8%8A%B1%E5%9B%AD%E4%B8%89%E6%9C%9F'
-    url = 'https://cd.lianjia.com/ershoufang/chuanshi'
-    start_urls = [url]
+    allowed_domains = ['Lianjia.com']
+    url = 'https://cd.lianjia.com/ershoufang/jinjiang/'
+    start_urls = url
 
-    rules=(
-        Rule(LinkExtractor(allow=(r'https://cd.lianjia.com/ershoufang/chuanshi/pg\d')),callback='parse_item',follow=True),
-    )
+    def start_requests(self):
+        user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7'
+        headers = {'User-Agent': user_agent}
+        yield scrapy.Request(url=self.start_urls, headers=headers, method='GET', callback=self.parse)
 
-    #def parse(self, response):
-    def parse_item(self, response):
-        bodys = Selector(response).xpath("body//div[@class='clear']")
-
-        for body in bodys:
-            item = LianjiaItem()
-            item['title'] = body.xpath(
-                "//div[@class='info clear']//div[@class='title']//a//text()").extract()
-            item['total_price'] = body.xpath(
-                "//div[@class='totalPrice']//span//text()").extract()
-            item['area'] = body.xpath(
-                "//div[@class='houseInfo']//span[@class='houseIcon']/following::text()[2]").extract()
-            item['unit_price'] = body.xpath(
-                "//div[@class='priceInfo']//div[@class='unitPrice']//text()").extract()
-            item['followInfo'] = body.xpath(
-                "//div[@class='info clear']//div[@class='followInfo']//text()").extract()
-            item['linkInfo'] = body.xpath(
-                "//div[@class='info clear']//div[@class='title']//a//@href").extract()
-
-        yield item
+    def parse(self, response):
+        user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_2) AppleWebKit/604.4.7 (KHTML, like Gecko) Version/11.0.2 Safari/604.4.7'
+        headers = {'User-Agent': user_agent}
+        lists = response.body.decode('utf-8')
+        selector = etree.HTML(lists)
+        for i in range(1, 101):
+            url = 'https://cd.lianjia.com/ershoufang/jinjiang/pg{}/'.format(i)
+            print('url is....', url)
+            time.sleep(2)
+            try:
+                contents = requests.get(url)
+                contents = etree.HTML(contents.content.decode('utf-8'))
+                houselist = contents.xpath('/html/body/div[4]/div[1]/ul/li')
+                count = 0
+                for house in houselist:
+                    try:
+                        item = LianjiaItem()
+                        item['title'] = house.xpath('div[1]/div[1]/a/text()').pop()
+                        item['community'] = house.xpath('div[1]/div[2]/div/a/text()').pop()
+                        item['model'] = house.xpath('div[1]/div[2]/div/text()').pop().split('|')[1]
+                        item['area'] = house.xpath('div[1]/div[2]/div/text()').pop().split('|')[2]
+                        item['focus_num'] = house.xpath('div[1]/div[4]/text()').pop().split('/')[0]
+                        item['watch_num'] = house.xpath('div[1]/div[4]/text()').pop().split('/')[1]
+                        item['time'] = house.xpath('div[1]/div[4]/text()').pop().split('/')[2]
+                        item['price'] = house.xpath('div[1]/div[6]/div[1]/span/text()').pop()+'万'
+                        item['link'] = house.xpath('div[1]/div[1]/a/@href').pop()
+                        item['average_price'] = house.xpath('div[1]/div[6]/div[2]/span/text()').pop()
+                        print("This is test.........")
+                        print("count is....", count)
+                        count = count + 1
+                    except Exception:
+                        pass
+                    yield item
+            except Exception:
+                pass

@@ -19,7 +19,7 @@ NEWSPIDER_MODULE = 'lianjia.spiders'
 #USER_AGENT = 'lianjia (+http://www.yourdomain.com)'
 
 # Obey robots.txt rules
-ROBOTSTXT_OBEY = False
+#ROBOTSTXT_OBEY = False
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -89,6 +89,7 @@ ROBOTSTXT_OBEY = False
 #HTTPCACHE_IGNORE_HTTP_CODES = []
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
+
 ITEM_PIPELINES = {
     'lianjia.pipelines.LianjiaPipeline': 300,
     }
@@ -97,4 +98,16 @@ MONGODB_SERVER = "localhost"
 MONGODB_PORT = 27017
 MONGODB_DB = "Spider"
 # 可以更改收集项
-MONGODB_COLLECTION = "chuanshi"
+MONGODB_COLLECTION = "lianjia_jinjiang"
+#MONGODB_COLLECTION = "lianjia_qingyang"
+#MONGODB_COLLECTION = "lianjia_wuhou"
+#MONGODB_COLLECTION = "lianjia_gaoxin7"
+#MONGODB_COLLECTION = "lianjia_chenghua"
+#MONGODB_COLLECTION = "lianjia_jinniu"
+#MONGODB_COLLECTION = "lianjia_tianfuxinqu"
+#MONGODB_COLLECTION = "lianjia_gaoxinxi1"
+#MONGODB_COLLECTION = "lianjia_shuangliu"
+#MONGODB_COLLECTION = "lianjia_wenjiang"
+#MONGODB_COLLECTION = "lianjia_pidou"
+#MONGODB_COLLECTION = "lianjia_longquanyi"
+#MONGODB_COLLECTION = "lianjia_xindou"
