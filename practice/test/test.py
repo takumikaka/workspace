@@ -121,9 +121,22 @@ tag = soup.body
 
 ##############################################################################
 
-'''
-
 str = 'jinjiang'
 for num in range(1, 10):
     url = "https://cd.lianjia.com/ershoufang/{0}/pg{1}/".format(str, num)
     print(url)
+
+###############################################################################
+
+'''
+
+import pandas as pd
+import numpy as np
+import matplotlib
+matplotlib.use('TkAgg')
+import matplotlib.pyplot as plt
+import json
+
+data = pd.DataFrame(json.loads(open('/Users/a/Desktop/workspace/practice/lianjia/bodys.json', 'r+').read()))
+plt.imshow(data)
+plt.show()
