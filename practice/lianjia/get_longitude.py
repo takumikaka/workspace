@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+#python2.x
+
 import urllib2
 import sys
 from save_file import save_json
