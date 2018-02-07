@@ -15,16 +15,17 @@ def replace_blank(lists):
 
 def get_latitude(lists):
     try:
-        for i in lists:
-            add = i.decode('utf-8')
-            time.sleep(2)
+        for i in range(len(lists)):
+            add = lists[i].decode('utf-8')
+            i += 1
+            print('The current progress is as follows: {0}/{1}'.format(i, len(lists)))
+            time.sleep(0.5)
             print('Start get url {}...'.format(add))
             url = 'https://api.map.baidu.com/geocoder?address={}&city=成都市&output=json&key=1FPdGX4ZnhhBj4QEGyfsVBbkZM4kNWNM'.format(add)
-            time.sleep(2)
             print('Start get latitude {}...'.format(add))
             html = urllib2.urlopen(urllib2.Request(url))
             json1 = html.read()
-            time.sleep(2)
+            time.sleep(0.5)
             print('Start save file...')
             save_json(json1)
     except Exception:

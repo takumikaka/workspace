@@ -13,4 +13,4 @@ lists = ['龙湖晶蓝半岛一期 ', '蓉上坊一期 ', '卓锦城五期 ', '�
 lists = replace_blank(lists)
 get_latitude(lists)
 content = read_file("latitude.json")
-print(content)
+print('The json file is: {0}'.format(content))
