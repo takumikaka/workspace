@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from get_longitude import replace_blank, get_latitude
+from read_file import read_file
 
 lists = ['龙湖晶蓝半岛一期 ', '蓉上坊一期 ', '卓锦城五期 ', '卓锦城六期 ', '沙河壹号二期 ', '澳龙名城 ',
         '星河名都 ', '翡翠城四期 ', '万科金润华府 ', '锦江城市花园三期 ', '时代豪庭一期 ', '华韵天府 ',
@@ -11,3 +12,5 @@ lists = ['龙湖晶蓝半岛一期 ', '蓉上坊一期 ', '卓锦城五期 ', '�
 
 lists = replace_blank(lists)
 get_latitude(lists)
+content = read_file("latitude.json")
+print(content)
