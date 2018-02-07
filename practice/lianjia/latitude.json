@@ -1,0 +1,814 @@
+
+<?xml version="1.0" encoding="utf-8" ?> 
+<GeocoderSearchResponse> 
+	<status>OK</status>
+	<result>
+					<location>
+				<lat>30.601292</lat>
+				<lng>104.145232</lng>
+			</location>	
+			<precise>1</precise>
+			<confidence>75</confidence>
+			<level>UNKNOWN</level>
+			</result>	
+</GeocoderSearchResponse>
+None
+None
+{
+    "status":"OK",
+    "result":[
+        
+    ]
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.099238,
+            "lat":30.653915
+        },
+        "precise":1,
+        "confidence":80,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.145949,
+            "lat":30.603433
+        },
+        "precise":1,
+        "confidence":70,
+        "level":"UNKNOWN"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.145232,
+            "lat":30.601292
+        },
+        "precise":1,
+        "confidence":75,
+        "level":"UNKNOWN"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.121396,
+            "lat":30.625158
+        },
+        "precise":1,
+        "confidence":80,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.118962,
+            "lat":30.633736
+        },
+        "precise":0,
+        "confidence":60,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.085524,
+            "lat":30.651912
+        },
+        "precise":1,
+        "confidence":75,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.100332,
+            "lat":30.616798
+        },
+        "precise":0,
+        "confidence":60,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.123514,
+            "lat":30.628842
+        },
+        "precise":1,
+        "confidence":70,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.152816,
+            "lat":30.6037
+        },
+        "precise":1,
+        "confidence":75,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.095039,
+            "lat":30.652724
+        },
+        "precise":1,
+        "confidence":80,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.151634,
+            "lat":30.611835
+        },
+        "precise":1,
+        "confidence":70,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.100731,
+            "lat":30.617018
+        },
+        "precise":1,
+        "confidence":75,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.145999,
+            "lat":30.606247
+        },
+        "precise":1,
+        "confidence":80,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.109036,
+            "lat":30.631067
+        },
+        "precise":0,
+        "confidence":50,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.090353,
+            "lat":30.6039
+        },
+        "precise":1,
+        "confidence":70,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.110221,
+            "lat":30.64605
+        },
+        "precise":1,
+        "confidence":80,
+        "level":"\u5546\u52a1\u5927\u53a6"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.078316,
+            "lat":30.658143
+        },
+        "precise":1,
+        "confidence":80,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.11022,
+            "lat":30.637187
+        },
+        "precise":0,
+        "confidence":60,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.123608,
+            "lat":30.641609
+        },
+        "precise":1,
+        "confidence":70,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.142129,
+            "lat":30.603825
+        },
+        "precise":1,
+        "confidence":70,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.135398,
+            "lat":30.619908
+        },
+        "precise":1,
+        "confidence":70,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.115802,
+            "lat":30.634037
+        },
+        "precise":1,
+        "confidence":75,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.135398,
+            "lat":30.619908
+        },
+        "precise":1,
+        "confidence":70,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.145949,
+            "lat":30.603433
+        },
+        "precise":1,
+        "confidence":70,
+        "level":"UNKNOWN"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.085524,
+            "lat":30.651912
+        },
+        "precise":1,
+        "confidence":75,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.099238,
+            "lat":30.653915
+        },
+        "precise":1,
+        "confidence":80,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.152156,
+            "lat":30.602407
+        },
+        "precise":1,
+        "confidence":75,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.145812,
+            "lat":30.596352
+        },
+        "precise":0,
+        "confidence":50,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.145232,
+            "lat":30.601292
+        },
+        "precise":1,
+        "confidence":75,
+        "level":"UNKNOWN"
+    }
+}
+{
+    "status":"OK",
+    "result":[
+        
+    ]
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.099238,
+            "lat":30.653915
+        },
+        "precise":1,
+        "confidence":80,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":[
+        
+    ]
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.099238,
+            "lat":30.653915
+        },
+        "precise":1,
+        "confidence":80,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.100851,
+            "lat":30.648079
+        },
+        "precise":0,
+        "confidence":70,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.099238,
+            "lat":30.653915
+        },
+        "precise":1,
+        "confidence":80,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.100851,
+            "lat":30.648079
+        },
+        "precise":0,
+        "confidence":70,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.099238,
+            "lat":30.653915
+        },
+        "precise":1,
+        "confidence":80,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.100851,
+            "lat":30.648079
+        },
+        "precise":0,
+        "confidence":70,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.099238,
+            "lat":30.653915
+        },
+        "precise":1,
+        "confidence":80,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.145949,
+            "lat":30.603433
+        },
+        "precise":1,
+        "confidence":70,
+        "level":"UNKNOWN"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.145232,
+            "lat":30.601292
+        },
+        "precise":1,
+        "confidence":75,
+        "level":"UNKNOWN"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.121396,
+            "lat":30.625158
+        },
+        "precise":1,
+        "confidence":80,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.118962,
+            "lat":30.633736
+        },
+        "precise":0,
+        "confidence":60,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.085524,
+            "lat":30.651912
+        },
+        "precise":1,
+        "confidence":75,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.100332,
+            "lat":30.616798
+        },
+        "precise":0,
+        "confidence":60,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.123514,
+            "lat":30.628842
+        },
+        "precise":1,
+        "confidence":70,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.152816,
+            "lat":30.6037
+        },
+        "precise":1,
+        "confidence":75,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.095039,
+            "lat":30.652724
+        },
+        "precise":1,
+        "confidence":80,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.151634,
+            "lat":30.611835
+        },
+        "precise":1,
+        "confidence":70,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.100731,
+            "lat":30.617018
+        },
+        "precise":1,
+        "confidence":75,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.145999,
+            "lat":30.606247
+        },
+        "precise":1,
+        "confidence":80,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.109036,
+            "lat":30.631067
+        },
+        "precise":0,
+        "confidence":50,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.090353,
+            "lat":30.6039
+        },
+        "precise":1,
+        "confidence":70,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.110221,
+            "lat":30.64605
+        },
+        "precise":1,
+        "confidence":80,
+        "level":"\u5546\u52a1\u5927\u53a6"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.078316,
+            "lat":30.658143
+        },
+        "precise":1,
+        "confidence":80,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.11022,
+            "lat":30.637187
+        },
+        "precise":0,
+        "confidence":60,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.123608,
+            "lat":30.641609
+        },
+        "precise":1,
+        "confidence":70,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.142129,
+            "lat":30.603825
+        },
+        "precise":1,
+        "confidence":70,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.135398,
+            "lat":30.619908
+        },
+        "precise":1,
+        "confidence":70,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.115802,
+            "lat":30.634037
+        },
+        "precise":1,
+        "confidence":75,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.135398,
+            "lat":30.619908
+        },
+        "precise":1,
+        "confidence":70,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.145949,
+            "lat":30.603433
+        },
+        "precise":1,
+        "confidence":70,
+        "level":"UNKNOWN"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.085524,
+            "lat":30.651912
+        },
+        "precise":1,
+        "confidence":75,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.099238,
+            "lat":30.653915
+        },
+        "precise":1,
+        "confidence":80,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.152156,
+            "lat":30.602407
+        },
+        "precise":1,
+        "confidence":75,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.145812,
+            "lat":30.596352
+        },
+        "precise":0,
+        "confidence":50,
+        "level":"\u5730\u4ea7\u5c0f\u533a"
+    }
+}
+{
+    "status":"OK",
+    "result":{
+        "location":{
+            "lng":104.145232,
+            "lat":30.601292
+        },
+        "precise":1,
+        "confidence":75,
+        "level":"UNKNOWN"
+    }
+}
