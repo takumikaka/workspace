@@ -24,3 +24,78 @@ source ~/.virtualenvs/djangodev/bin/activate
 
 # Quit virtualenvs
 deactivate
+
+# create database for mysql
+CREATE DATABASE <your database's name>;
+or
+CREATE DATABASE cnblogsdb DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+CREATE TABLE `cnblogsinfo` (
+  `linkmd5id` char(32) NOT NULL COMMENT 'url md5编码id',
+  `title` text COMMENT '标题',
+  `description` text COMMENT '描述',
+  `link` text  COMMENT 'url链接',
+  `listUrl` text  COMMENT '分页url链接',
+  `updated` datetime DEFAULT NULL  COMMENT '最后更新时间',
+  PRIMARY KEY (`linkmd5id`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+
+# delete database for mysql
+drop database <your database's name>;
+
+# some commands for mysql
+show databases;
+use <your database's name>;
+show tables;
+select * from <your table's name>;
+desc <your tables's name>;
+
+# new database
+python manage.py migrate
+python manage.py makemigrations <your app's name>
+python manage.py sqlmigrate <your app's name> <id>
+python manage.py migrate
+
+# ubunut delete file command
+rm <your file's name>
+
+# 排版可以参见bootstrap
+http://www.runoob.com/bootstrap/bootstrap-typography.html
+
+# How to install virtualenvs
+https://docs.djangoproject.com/en/2.0/intro/contributing/
+
+# install vim
+https://jingyan.baidu.com/article/046a7b3efd165bf9c27fa915.html
+
+# vim config
+https://github.com/wklken/k-vim
+
+# start mac-pro mysql server
+mysql.server start
+
+# how to start mongodb
+brew services start mongodb
+
+# go to mongodb shell
+mongo
+
+# show mongodb database
+show dbs
+
+# use some mongodb database
+use <database name>
+
+# check database collections
+show collections
+
+# print database data
+db.<table's name>.find()
+
+# Drop collection
+db.<collection name>.drop()
+
+# Import json file from mongodb
+mongoexport -d Spider -c chuanshi -o bodys.json
+
+# 获取热力图的ak
+28176ab538f60a16a72f6d7b4d261efe

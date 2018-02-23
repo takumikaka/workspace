@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Blog article{% endblock %}
+
+{% block content %}
+<div class="row text-center vertical-middle-sm">
+  <h1>{{ article.title }}</h1>
+</div>
+<div class="row">
+  <div class="col-xs-12 col-md-8">
+      <p class="text-center"><span>{{ article.author }}</span><span 
+style="margin-left:20px">{{ publish }}</span></p>
+<div>{{ article.body }}</div>
+</div>
+    <div class="col-xs-6 col-md-4">
+        <h2>小文字</h2>
+        <p>hello python! hello blog! hello man!</p>
+        <img width="200px" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1514743628764&di=07abc90e787e38ebe591cc9150d128dc&imgtype=0&src=http%3A%2F%2Fpic22.nipic.com%2F20120724%2F3354124_193041099386_2.jpg">
+    </div>
+</div>
+{% endblock %}

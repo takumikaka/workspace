@@ -1,4 +1,4 @@
-"""jiraproject URL Configuration
+"""mysite URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/dev/topics/http/urls/
@@ -18,5 +18,6 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('jira/', include('jira.urls')),
+    path('blog/', include('blog.urls')),
+    path('account/', include('account.urls')),
 ]

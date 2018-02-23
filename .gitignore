@@ -14,3 +14,8 @@ mysite/polls/__pycache__/urls\.cpython-36\.pyc
 mysite/polls/__pycache__/views\.cpython-36\.pyc
 
 *.pyc
+<<<<<<< HEAD
+=======
+
+\.DS_Store
+>>>>>>> ticket_24788
