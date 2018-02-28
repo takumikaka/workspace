@@ -6,7 +6,7 @@ from processer.tuling import Tuling
 
 class Robot(Bot):
     def __init__(self):
-        Bot.__init__(self, cache_path=True, console_qr=True)
+        Bot.__init__(self, cache_path=True, console_qr=-2)
         self.tuling = Tuling()
 
     def friend_msg_process(self, msg, tuling = True):
