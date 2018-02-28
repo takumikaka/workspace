@@ -99,3 +99,9 @@ mongoexport -d Spider -c chuanshi -o bodys.json
 
 # 获取热力图的ak
 28176ab538f60a16a72f6d7b4d261efe
+
+# 阿里云ssh远程
+ssh root@47.52.193.48
+
+# 远程命令git pull主版本
+git pull -u origin master
