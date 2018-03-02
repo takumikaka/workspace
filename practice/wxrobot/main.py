@@ -3,10 +3,10 @@
 from wxpy import *
 from processer.robot import Robot
 
-version = '0.0.1'
+version = '0.0.2'
 
 bot = Robot()
-bot.send_msg_process()
+bot.member_fun()
 print('Version:{0}'.format(version))
 
 embed()
