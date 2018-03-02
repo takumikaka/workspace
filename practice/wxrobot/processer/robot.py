@@ -32,6 +32,8 @@ class Robot(Bot):
         # 函数信息
         self.FUNC_CODE_NO_PARAM = {
                                     'lunch': self.get_lunch,
+                                    'wrk': self.set_wrk,
+                                    'wrg': self.set_wrg,
         }
 
         self.FUNC_CODE_PARAM = {
@@ -42,7 +44,7 @@ class Robot(Bot):
         self.friend_no_param = set(['lunch', ])
         self.friend_param = set([])
 
-        self.admin_no_param = self.friend_no_param | set([])
+        self.admin_no_param = self.friend_no_param | set(['wrk', 'wrg',])
         self.admin_param = self.friend_param | set(['logout'])
 
     def get_admin(self):
@@ -59,6 +61,14 @@ class Robot(Bot):
     # 设置lunch
     def get_lunch(self):
         return random.choice(self.lunch)
+
+    def set_wrk(self):
+        self.wr = True
+        return '开启勿扰模式...'
+
+    def set_wrg(self):
+        self.wr = False
+        return '关闭勿扰模式...'
 
     def ai_logout(self, msg):
         msg.reply_msg('AI Logout...')
@@ -97,19 +107,25 @@ class Robot(Bot):
         if msg_rec in self.admin_param:
             return self.FUNC_CODE_PARAM.get(msg_rec)(msg)
 
+        if self.wr:
+            return config.WR_MSG
+
         # 调用图灵
         if tuling:
             return self.tuling.get_msg(msg.text)
 
     # 后注册的配置具有更高的优先级
     def member_fun(self):
+
         @self.register(Friend, TEXT)
         def text_processer(msg):
+
             if msg.sender == self.admin:
                 ans = self.admin_msg_process(msg)
                 if ans is not None:
                     return ans
-            elif self.wr:
+
+            if self.wr:
                 return config.WR_MSG
             else:
                 return self.friend_msg_process(msg)
