@@ -34,6 +34,7 @@ class Robot(Bot):
                                     'lunch': self.get_lunch,
                                     'wrk': self.set_wrk,
                                     'wrg': self.set_wrg,
+                                    'st': self.get_status,
         }
 
         self.FUNC_CODE_PARAM = {
@@ -44,7 +45,7 @@ class Robot(Bot):
         self.friend_no_param = set(['lunch', ])
         self.friend_param = set([])
 
-        self.admin_no_param = self.friend_no_param | set(['wrk', 'wrg',])
+        self.admin_no_param = self.friend_no_param | set(['wrk', 'wrg', 'st', ])
         self.admin_param = self.friend_param | set(['logout'])
 
     def get_admin(self):
@@ -57,6 +58,11 @@ class Robot(Bot):
         return admin
 
     # 将文字信息函数分离出来，这样可以通过指令集合来区分不同的人，避免拟合
+
+    def get_status(self):
+        ans = u'勿扰模式: ' + (u'开' if self.wr else u'关')
+        ans += u'\n聊天程序: ' + (u'开' if self.tuling.get_swith() else u'关')
+        return ans
 
     # 设置lunch
     def get_lunch(self):
@@ -109,6 +115,10 @@ class Robot(Bot):
 
         if self.wr:
             return config.WR_MSG
+
+        # 开关聊天程序
+        if msg_rec in ['tlk', 'tlg']:
+            return self.tuling.set_swith(True if msg_rec == 'tlk' else False)
 
         # 调用图灵
         if tuling:
