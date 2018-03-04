@@ -5,6 +5,7 @@ from wxpy import *
 from processer.tuling import Tuling
 import config
 import random
+from processer.restaurant import Restaurant
 
 class Robot(Bot):
     def __init__(self):
@@ -15,10 +16,9 @@ class Robot(Bot):
         self.enable_puid('./cache/admin_puid.pkl')
         self.admin = self.get_admin()
         self.tuling = Tuling()
+        self.restaurant = Restaurant()
 
         self.wr = False
-
-        self.lunch = ['面', '米线', '套餐']
 
         # 纯文本信息
         self.FRIEND_TEXT = {
@@ -66,7 +66,11 @@ class Robot(Bot):
 
     # 设置lunch
     def get_lunch(self):
-        return random.choice(self.lunch)
+        try:
+            lst_lunch = self.restaurant.run()
+            return random.choice(lst_lunch)
+        except Exception as e:
+            print(e)
 
     def set_wrk(self):
         self.wr = True
