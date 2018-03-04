@@ -6,6 +6,8 @@ from processer.tuling import Tuling
 import config
 import random
 from processer.restaurant import Restaurant
+import time, datetime
+import threading
 
 class Robot(Bot):
     def __init__(self):
@@ -19,6 +21,10 @@ class Robot(Bot):
         self.restaurant = Restaurant()
 
         self.wr = False
+
+        # 指定用户对象并尝试发送信息
+        my_friend = self.friends().search(config.ADMIN_NAME)[0]
+        self.logger = get_wechat_logger(my_friend)
 
         # 纯文本信息
         self.FRIEND_TEXT = {
@@ -143,3 +149,20 @@ class Robot(Bot):
                 return config.WR_MSG
             else:
                 return self.friend_msg_process(msg)
+
+    # 设置吃饭提醒时间
+    def corn_lunch(self):
+        SECONDS_PER_DAY = 24 * 60 * 60
+        curTime = datetime.datetime.now()
+        desTime = curTime.replace(hour=21, minute=43, second=1, microsecond=0)
+        delta = (desTime - curTime).total_seconds()
+        skipSeconds = (SECONDS_PER_DAY + delta) if delta < 0 else delta
+        print('code...test...skipSeconds...', skipSeconds)
+        time.sleep(skipSeconds)
+        self.logger.warning(random.choice(config.LUNCH_WARN))
+
+    # 设定线程控制吃饭时间提醒
+    def threads(self):
+        t_lunch = threading.Thread(target=self.corn_lunch)
+        t_lunch.setDaemon(True)
+        t_lunch.start()
