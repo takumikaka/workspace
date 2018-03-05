@@ -2,13 +2,15 @@
 
 
 from wxpy import *
-from processer.tuling import Tuling
 import config
 import random
-from processer.restaurant import Restaurant
 import time, datetime
 import threading
 import linecache
+from processer.restaurant import Restaurant
+from processer.tuling import Tuling
+from processer.zodic import Zodic
+
 
 class Robot(Bot):
     def __init__(self):
@@ -20,6 +22,7 @@ class Robot(Bot):
         self.admin = self.get_admin()
         self.tuling = Tuling()
         self.restaurant = Restaurant()
+        self.zodic = Zodic()
 
         self.wr = False
 
@@ -114,6 +117,10 @@ class Robot(Bot):
         if self.FRIEND_TEXT.get(msg_rec) is not None:
             return self.FRIEND_TEXT.get(msg_rec)
 
+        # 判断星座信息
+        if msg_rec in self.zodic.stars.keys():
+            return self.zodic.get_data(msg_rec)
+
         if msg_rec in self.friend_no_param:
             return self.FUNC_CODE_NO_PARAM.get(msg_rec)()
 
@@ -129,6 +136,10 @@ class Robot(Bot):
 
         if self.ADMIN_TEXT.get(msg_rec) is not None:
             return self.ADMIN_TEXT.get(msg_rec)
+
+        # 判断星座信息
+        if msg_rec in self.zodic.stars.keys():
+            return self.zodic.get_data(msg_rec)
 
         # 判断是否是无参数指令命令
         if msg_rec in self.admin_no_param:
