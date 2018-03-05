@@ -8,6 +8,7 @@ import random
 from processer.restaurant import Restaurant
 import time, datetime
 import threading
+import linecache
 
 class Robot(Bot):
     def __init__(self):
@@ -21,6 +22,9 @@ class Robot(Bot):
         self.restaurant = Restaurant()
 
         self.wr = False
+
+        # 获取笑话文件
+        self.file_count = len(open('./files/laugh.txt', 'rU').readline())
 
         # 指定用户对象并尝试发送信息
         my_friend = self.friends().search(config.ADMIN_NAME)[0]
@@ -38,6 +42,8 @@ class Robot(Bot):
         # 函数信息
         self.FUNC_CODE_NO_PARAM = {
                                     'lunch': self.get_lunch,
+                                    'joke': self.get_joke,
+                                    # 以下是admin命令
                                     'wrk': self.set_wrk,
                                     'wrg': self.set_wrg,
                                     'st': self.get_status,
@@ -48,7 +54,7 @@ class Robot(Bot):
         }
 
         # 指令分为有参数，无参数，有参数like，无参数like
-        self.friend_no_param = set(['lunch', ])
+        self.friend_no_param = set(['lunch', 'joke', ])
         self.friend_param = set([])
 
         self.admin_no_param = self.friend_no_param | set(['wrk', 'wrg', 'st', ])
@@ -77,6 +83,15 @@ class Robot(Bot):
             return random.choice(lst_lunch)
         except Exception as e:
             print(e)
+
+    def get_joke(self):
+        # 勿扰模式
+        if self.wr:
+            return config.WR_MSG
+
+        at_msg = random.randrange(1, self.file_count, 1)
+        msg = linecache.getline('./files/laugh.txt', at_msg).strip()
+        return msg
 
     def set_wrk(self):
         self.wr = True
@@ -157,7 +172,6 @@ class Robot(Bot):
         desTime = curTime.replace(hour=21, minute=43, second=1, microsecond=0)
         delta = (desTime - curTime).total_seconds()
         skipSeconds = (SECONDS_PER_DAY + delta) if delta < 0 else delta
-        print('code...test...skipSeconds...', skipSeconds)
         time.sleep(skipSeconds)
         self.logger.warning(random.choice(config.LUNCH_WARN))
 
