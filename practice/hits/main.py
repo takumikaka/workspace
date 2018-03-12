@@ -1,9 +1,9 @@
 # -*- coding: utf-8 -*-
 
-from processers.comp_dict import compDict
+from processers.comp_json import compJson
 
 version = 'V0.0.1'
 
-compdict = compDict()
-compdict.run()
+compjson = compJson()
+compjson.run()
 print(version)

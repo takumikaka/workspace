@@ -8,7 +8,7 @@ import config
 class getValue(object):
     def __init__(self):
         self.get_html = getHtml()
-        self.eid = config.EID_2_6
+        self.eid = config.EID
 
     def get_value(self, data):
         hits_data = data.get('hits', []).get('hits')
@@ -22,6 +22,7 @@ class getValue(object):
     def run(self):
         data = self.get_html.run()
         value = self.get_value(data)
+        value = value.get('default', {})
         return value
 
 
