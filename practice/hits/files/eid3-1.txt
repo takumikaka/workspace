@@ -1,0 +1,6 @@
+缺失的数据打点如下:
+['要求数据: amount :200']
+差异的数据打点如下:
+['要求数据: time:2017-10-10 10:59:58', '网页数据: time:2018-03-12 19:02:54', '要求数据: type:DHdFJDFjDKFJD', '网页数据: type:1100494', '要求数据: server:lite_game_001', '网页数据: server:game_node_localqa', '要求数据: game_id:549908695', '网页数据: game_id:9999001', '要求数据: role_id:549908695', '网页数据: role_id:9999001', '要求数据: nickname:烽沙承雨', '网页数据: nickname:001', '要求数据: child_eid:194294', '网页数据: child_eid:9999002', '要求数据: class1:8', '网页数据: class1:105', '要求数据: class2:', '网页数据: class2:0', '要求数据: count:2', '网页数据: count:1', '要求数据: from_to_sex:1:1', '网页数据: from_to_sex:1:0', '要求数据: is_start:1', '网页数据: is_start:0', '要求数据: is_suc:0', '网页数据: is_suc:1', '要求数据: impression:0', '网页数据: impression:1', '要求数据: girl_first:0', '网页数据: girl_first:-1', '要求数据: room:18806', '网页数据: room:991013', '要求数据: room_str:194294_1507592929184', '网页数据: room_str:991013_1520852276732', '要求数据: game_str:194294_1507592929184_1507604207167', '网页数据: game_str:991013_1520852276732_1520852306981']
+相同的数据打点如下:
+['要求数据: appid:nat_sjyx_AySSih', '网页数据: appid:nat_sjyx_AySSih', '要求数据: channel:', '网页数据: channel:', '要求数据: uid:', '网页数据: uid:', '要求数据: eid:3-1', '网页数据: eid:3-1', '要求数据: status:', '网页数据: status:', '要求数据: os:ANDROID', '网页数据: os:ANDROID', '要求数据: win:0', '网页数据: win:0', '要求数据: fail:0', '网页数据: fail:0', '要求数据: sex:M', '网页数据: sex:M', '要求数据: role:-1', '网页数据: role:-1']

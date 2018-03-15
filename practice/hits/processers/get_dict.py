@@ -2,6 +2,7 @@
 
 
 from processers.get_value import getValue
+from processers.check_json import checkJson
 import config
 
 ########################################################################
@@ -9,7 +10,7 @@ import config
 class getDict(object):
     def __init__(self):
         self.get_value = getValue()
-        self.json_2_6 = config.JSON_2_6
+        self.check_data = checkJson()
         self.dic_html = {}
         self.dic_json = {}
 
@@ -32,6 +33,7 @@ class getDict(object):
 
     def get_dict_json(self):
         dic = self.dic_json
-        value = self.json_2_6
+        value = self.check_data.run()
+        #value = self.json_data
         dic_json = self.json_dict(value, dic)
         return dic_json

@@ -1,0 +1,6 @@
+缺失的数据打点如下:
+[]
+差异的数据打点如下:
+['要求数据: appid:mm_lrs_xDKSGq', '网页数据: appid:nat_sjyx_AySSih', '要求数据: time:2017-10-10 10:59:58', '网页数据: time:2018-03-12 18:06:23', '要求数据: server:lite_game_001', '网页数据: server:game_node_localqa', '要求数据: game_id:549908695', '网页数据: game_id:9999001', '要求数据: role_id:549908695', '网页数据: role_id:9999001', '要求数据: nickname:烽沙承雨', '网页数据: nickname:001', '要求数据: child_eid:194294', '网页数据: child_eid:991003', '要求数据: class1:8', '网页数据: class1:199', '要求数据: room_str:194294_1507592929184', '网页数据: room_str:991003_1520849183462', '要求数据: enter_type:0', '网页数据: enter_type:3', '要求数据: game_str:194294_1507592929184_1507604207167', '网页数据: game_str:991003_1520849183462_1520849183462']
+相同的数据打点如下:
+['要求数据: type:1', '网页数据: type:1', '要求数据: channel:', '网页数据: channel:', '要求数据: uid:', '网页数据: uid:', '要求数据: eid:2-7', '网页数据: eid:2-7', '要求数据: status:', '网页数据: status:', '要求数据: os:ANDROID', '网页数据: os:ANDROID', '要求数据: sex:M', '网页数据: sex:M', '要求数据: class2:', '网页数据: class2:']

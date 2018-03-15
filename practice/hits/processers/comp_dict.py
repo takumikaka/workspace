@@ -12,6 +12,7 @@ class compDict(object):
         self.miss_lst = []
         self.diff_lst = []
         self.same_lst = []
+        self.miss_key = []
         self.content_miss = config.CONTENT_MISS
         self.content_diff = config.CONTENT_DIFF
         self.content_same = config.CONTENT_SAME
@@ -22,13 +23,16 @@ class compDict(object):
 
         dict1 = self.get_dict.get_dict_html()
         dict2 = self.get_dict.get_dict_json()
+
         for key in dict2.keys():
             if key not in dict1:
                 st_json = '要求数据: {0}:{1}'.format(key, dict2[key])
                 self.miss_lst.append(st_json)
+                self.miss_key.append(key)
                 #self.save_file.save_file(st_json)
 
-        dict2.pop(key)
+        for key in range(len(self.miss_key)):
+            dict2.pop(self.miss_key[key])
 
         for key in dict2.keys():
             if dict1[key] != dict2[key]:
