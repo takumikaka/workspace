@@ -1,0 +1,18 @@
+缺失的数据打点如下:
+['要求数据: type:team']
+差异的数据打点如下:
+['要求数据: time:2016-09-19 11:59:59', '网页数据: time:2018-03-12 17:27:26', '要求数据: server:lite_game_001', '网页数据: server:game_node_localqa', '要求数据: os:ios', '网页数据: os:IOS', '要求数据: game_id:', '网页数据: game_id:9999002', '要求数据: role_id:', '网页数据: role_id:9999002', '要求数据: child_eid:13578', '网页数据: child_eid:991001', '要求数据: amount:9', '网页数据: amount:2', '要求数据: sex_ratio:6:3', '网页数据: sex_ratio:1:1', '要求数据: s_wait_time:430', '网页数据: s_wait_time:38', '要求数据: class1:8', '网页数据: class1:106', '要求数据: class2:1', '网页数据: class2:', '要求数据: room_str:194294_1507592929184', '网页数据: room_str:991001_1520846808709', '要求数据: game_str:194294_1507592929184_1507604207167', '网页数据: game_str:991001_1520846808709_1520846808709']
+相同的数据打点如下:
+['要求数据: appid:nat_sjyx_AySSih', '网页数据: appid:nat_sjyx_AySSih', '要求数据: channel:', '网页数据: channel:', '要求数据: uid:', '网页数据: uid:', '要求数据: eid:1-1', '网页数据: eid:1-1', '要求数据: status:', '网页数据: status:']
+缺失的数据打点如下:
+['要求数据: type:team']
+差异的数据打点如下:
+['要求数据: time:2016-09-19 11:59:59', '网页数据: time:2018-03-12 17:27:26', '要求数据: server:lite_game_001', '网页数据: server:game_node_localqa', '要求数据: os:ios', '网页数据: os:IOS', '要求数据: game_id:', '网页数据: game_id:9999002', '要求数据: role_id:', '网页数据: role_id:9999002', '要求数据: child_eid:13578', '网页数据: child_eid:991001', '要求数据: amount:9', '网页数据: amount:2', '要求数据: sex_ratio:6:3', '网页数据: sex_ratio:1:1', '要求数据: s_wait_time:430', '网页数据: s_wait_time:38', '要求数据: class1:8', '网页数据: class1:106', '要求数据: class2:1', '网页数据: class2:', '要求数据: room_str:194294_1507592929184', '网页数据: room_str:991001_1520846808709', '要求数据: game_str:194294_1507592929184_1507604207167', '网页数据: game_str:991001_1520846808709_1520846808709']
+相同的数据打点如下:
+['要求数据: appid:nat_sjyx_AySSih', '网页数据: appid:nat_sjyx_AySSih', '要求数据: channel:', '网页数据: channel:', '要求数据: uid:', '网页数据: uid:', '要求数据: eid:1-1', '网页数据: eid:1-1', '要求数据: status:', '网页数据: status:']
+缺失的数据打点如下:
+['要求数据: type:team']
+差异的数据打点如下:
+['要求数据: time:2016-09-19 11:59:59', '网页数据: time:2018-03-12 17:27:26', '要求数据: server:lite_game_001', '网页数据: server:game_node_localqa', '要求数据: os:ios', '网页数据: os:IOS', '要求数据: game_id:', '网页数据: game_id:9999002', '要求数据: role_id:', '网页数据: role_id:9999002', '要求数据: child_eid:13578', '网页数据: child_eid:991001', '要求数据: amount:9', '网页数据: amount:2', '要求数据: sex_ratio:6:3', '网页数据: sex_ratio:1:1', '要求数据: s_wait_time:430', '网页数据: s_wait_time:38', '要求数据: class1:8', '网页数据: class1:106', '要求数据: class2:1', '网页数据: class2:', '要求数据: room_str:194294_1507592929184', '网页数据: room_str:991001_1520846808709', '要求数据: game_str:194294_1507592929184_1507604207167', '网页数据: game_str:991001_1520846808709_1520846808709']
+相同的数据打点如下:
+['要求数据: appid:nat_sjyx_AySSih', '网页数据: appid:nat_sjyx_AySSih', '要求数据: channel:', '网页数据: channel:', '要求数据: uid:', '网页数据: uid:', '要求数据: eid:1-1', '网页数据: eid:1-1', '要求数据: status:', '网页数据: status:']
