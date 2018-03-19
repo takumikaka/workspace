@@ -9,6 +9,13 @@ class compDict(object):
     def __init__(self):
         self.get_dict = getDict()
         self.save_file = saveFile()
+        self.miss_lst = []
+        self.diff_lst = []
+        self.same_lst = []
+        self.miss_key = []
+        self.content_miss = config.CONTENT_MISS
+        self.content_diff = config.CONTENT_DIFF
+        self.content_same = config.CONTENT_SAME
 
     def run(self):
         # dict1 网页数据
@@ -16,30 +23,41 @@ class compDict(object):
 
         dict1 = self.get_dict.get_dict_html()
         dict2 = self.get_dict.get_dict_json()
+
         for key in dict2.keys():
             if key not in dict1:
-                content = '缺失的数据打点如下:'
                 st_json = '要求数据: {0}:{1}'.format(key, dict2[key])
-                self.save_file.save_file(content)
-                self.save_file.save_file(st_json)
+                self.miss_lst.append(st_json)
+                self.miss_key.append(key)
+                #self.save_file.save_file(st_json)
 
-        dict2.pop(key)
+        for key in range(len(self.miss_key)):
+            dict2.pop(self.miss_key[key])
 
         for key in dict2.keys():
             if dict1[key] != dict2[key]:
-                content = '差异的数据打点如下:'
                 st_json = '要求数据: {0}:{1}'.format(key, dict2[key])
                 st_html = '网页数据: {0}:{1}'.format(key, dict1[key])
-                self.save_file.save_file(content)
-                self.save_file.save_file(st_json)
-                self.save_file.save_file(st_html)
+                self.diff_lst.append(st_json)
+                self.diff_lst.append(st_html)
+                #self.save_file.save_file(content)
+                #self.save_file.save_file(st_json)
+                #self.save_file.save_file(st_html)
             else:
-                content = '相同的数据打点如下:'
                 st_json = '要求数据: {0}:{1}'.format(key, dict2[key])
                 st_html = '网页数据: {0}:{1}'.format(key, dict1[key])
-                self.save_file.save_file(content)
-                self.save_file.save_file(st_json)
-                self.save_file.save_file(st_html)
+                self.same_lst.append(st_json)
+                self.same_lst.append(st_html)
+                #self.save_file.save_file(content)
+                #self.save_file.save_file(st_json)
+                #self.save_file.save_file(st_html)
+
+        self.save_file.save_file(self.content_miss)
+        self.save_file.save_file(str(self.miss_lst))
+        self.save_file.save_file(self.content_diff)
+        self.save_file.save_file(str(self.diff_lst))
+        self.save_file.save_file(self.content_same)
+        self.save_file.save_file(str(self.same_lst))
 
 # 不同数据用不同main运行？
 # 存入不同txt查看？
