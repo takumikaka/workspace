@@ -14,7 +14,6 @@ class openFile(object):
         filename = pwd_part_one + self.pwd_part_two
         return filename
 
-
     def get_base64(self):
         filename = self.get_filename()
         f = open(filename, 'rb')
