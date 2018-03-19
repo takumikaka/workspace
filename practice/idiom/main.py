@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 
 #from processers.random_lst import randomLst
-from processers.analyze_data import analyzeData
+from processers.analyze_dit import anylizeDit
 
 version = 'V 0.0.1'
 
-analyze_data = analyzeData()
-analyze_data.run()
+analyze_dit = anylizeDit()
+analyze_dit.run()
 
 print(version)
