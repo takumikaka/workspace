@@ -1,11 +1,13 @@
 # -*- coding: utf-8 -*-
 
-#from processers.random_lst import randomLst
-from processers.analyze_dit import anylizeDit
+from processers.analyze_data import analyzeData
+from processers.cut_img import cutImg
 
-version = 'V 0.0.1'
+version = 'V 0.0.3'
 
-analyze_dit = anylizeDit()
-analyze_dit.run()
+cut_img = cutImg()
+cut_img.run()
+analyze_data = analyzeData()
+analyze_data.run()
 
 print(version)

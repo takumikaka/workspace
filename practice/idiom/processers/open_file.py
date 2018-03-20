@@ -7,7 +7,7 @@ import urllib.parse
 class openFile(object):
     def __init__(self):
         self.get_cwd = getCwd()
-        self.pwd_part_two = 'pics/test.jpg'
+        self.pwd_part_two = 'pics/crop_test1.jpg'
 
     def get_filename(self):
         pwd_part_one = self.get_cwd.run()

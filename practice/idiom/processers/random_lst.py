@@ -2,10 +2,12 @@
 
 
 import random
+from processers.analyze_lst import analyzeLst
 
 class randomLst(object):
     def __init__(self):
-        self.lst = ['人', '一', '天', '无', '空', '切', '万', '瞪', '人', '呆', '手', '目']
+        self.analyze_lst = analyzeLst()
+        self.lst = self.analyze_lst.run()
         self.first_lst = []
 
     def run(self):
