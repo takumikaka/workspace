@@ -16,8 +16,7 @@ class screenShoot(object):
     def run(self):
         pwd_part_one = self.get_cwd.run()
         path =self.abs_path(pwd_part_one + self.pwd_part_two)
-        os.popen('adb wait-for-device')
-        os.popen('adb shell screencap -p /sdcard/screenshoot.png')
+        call('adb shell screencap -p /sdcard/screenshoot.png', shell=True)
         os.popen('adb pull /sdcard/screenshoot.png ' + path + '/')
         time.sleep(2)
         print('屏幕截取成功')
