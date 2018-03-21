@@ -7,7 +7,7 @@ import os
 class cutImg(object):
     def __init__(self):
         self.get_cwd = getCwd()
-        self.pwd_part_two = 'pics/test2.jpg'
+        self.pwd_part_two = 'pics/screenshoot.png'
 
     def get_filename(self):
         pwd_part_one = self.get_cwd.run()
@@ -19,9 +19,9 @@ class cutImg(object):
         im = Image.open(filename)
         img_size = im.size
         print("图片宽度和高度分别是{}".format(img_size))
-        x = 50
-        y = 200
-        w = 450
-        h = 420
+        x = 150
+        y = 500
+        w = 1150
+        h = 1110
         region = im.crop((x, y, x+w, y+h))
-        region.save(self.get_cwd.run() + "pics/crop_test1.jpg")
+        region.save(self.get_cwd.run() + "pics/crop_test1.png")
