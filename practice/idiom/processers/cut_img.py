@@ -24,4 +24,4 @@ class cutImg(object):
         w = 1150
         h = 1110
         region = im.crop((x, y, x+w, y+h))
-        region.save(self.get_cwd.run() + "pics/crop_test1.png")
+        region.save(self.get_cwd.run() + "pics/crop_screenshoot.png")

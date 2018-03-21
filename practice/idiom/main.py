@@ -3,6 +3,7 @@
 from processers.analyze_data import analyzeData
 from processers.screen_shoot import screenShoot
 from processers.cut_img import cutImg
+import time
 
 version = 'V 0.0.4'
 
