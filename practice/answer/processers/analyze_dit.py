@@ -13,5 +13,5 @@ class anylizeDit(object):
         lst = dit['words_result']
         for i in range(len(lst)):
             self.get_lst.append(lst[i]['words'])
-        print('文字词为: {0}'.format(self.get_lst))
-        return self.get_lst
+        ''.join(self.get_lst)
+        return ''.join(self.get_lst)

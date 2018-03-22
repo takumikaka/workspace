@@ -8,8 +8,7 @@ from processers.open_file import openFile
 
 class getDit(object):
     def __init__(self):
-        #self.request_url = 'https://aip.baidubce.com/rest/2.0/ocr/v1/accurate_basic'
-        self.request_url = 'https://aip.baidubce.com/rest/2.0/ocr/v1/accurate'
+        self.request_url = 'https://aip.baidubce.com/rest/2.0/ocr/v1/general_basic'
         self.get_html = getHtml()
         self.open_file = openFile()
 
