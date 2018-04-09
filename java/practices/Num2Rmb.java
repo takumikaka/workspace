@@ -1,3 +1,9 @@
+/*
+遗留问题：
+1、中间两个零
+2、最前面为零
+3、最后面为零
+*/
 public class Num2Rmb{
     private String[] hanArr = {"\u96F6", "\u58F9", "\u8D30", "\u53C1", "\u8086", "\u4F0D", "\u9646", "\u67D2", "\u634C", "\u7396", "\u62FE"};
     private String[] zheng_unitArr = {"\u5341", "\u767E", "\u5343", "\u4E07", "\u5341", "\u767E", "\u5343", "\u4EBF"};
