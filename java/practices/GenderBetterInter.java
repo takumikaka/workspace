@@ -1,4 +1,4 @@
-public enum GenderBetter{
+public enum GenderBetterInter implements GenderDesc{
     Male, Female;
     private String name;
     public void setName(String name){
@@ -23,5 +23,8 @@ public enum GenderBetter{
     }
     public String getName(){
         return name;
+    }
+    public void info(){
+        System.out.println("This is an enumerated class for defining sex.");
     }
 }
