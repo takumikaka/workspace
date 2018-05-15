@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 
-from processers.read_json import readJson
+from processers.answer_game import answerGame
 version = 'V0.0.1'
 
-read_json = readJson()
-read_json.run()
+answer_game = answerGame()
+answer_game.run()
 print(version)
