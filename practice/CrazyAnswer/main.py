@@ -1,8 +1,10 @@
 # -*- coding: utf-8 -*-
 
-from processers.answer_game import answerGame
-version = 'V0.0.1'
+from processers.for_tens import forTens
 
-answer_game = answerGame()
-answer_game.run()
+version = 'V0.0.3'
+
+for_tens = forTens()
+for_tens.run()
+
 print(version)
