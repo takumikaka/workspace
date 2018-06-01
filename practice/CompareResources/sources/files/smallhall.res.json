@@ -1,0 +1,1449 @@
+{
+	"groups": [
+		{
+			"keys": "bowen_png,bowen2_png,smallhall_bg_png,smallhall_ui_json,smallhall_bg_gray_png,loadingnew_png,color_28_png,loadingbg_jpg,wealth_ui_json,smallhall_action_json,smallhall_wait_accept_png,smallhall_add_friend_png,smallhall_accept_request_png",
+			"name": "SmallGameAction"
+		},
+		{
+			"keys": "roundthumb_png,track_sb_png,itemtype_json,smallhall_mg_title_png,smallhall_sg_title_png,hotvipbg_json",
+			"name": "Common"
+		}
+	],
+	"resources": [
+		{
+			"url": "smallhall/assets/smallhall_bg.png",
+			"type": "image",
+			"name": "smallhall_bg_png"
+		},
+		{
+			"url": "smallhall/assets/action/bowen.png",
+			"type": "bin",
+			"name": "bowen_png"
+		},
+		{
+			"url": "smallhall/assets/action/bowen2.png",
+			"type": "bin",
+			"name": "bowen2_png"
+		},
+		{
+			"url": "smallhall/assets/ScrollBar/roundthumb.png",
+			"type": "image",
+			"name": "roundthumb_png"
+		},
+		{
+			"url": "smallhall/assets/ScrollBar/track_sb.png",
+			"type": "image",
+			"name": "track_sb_png"
+		},
+		{
+			"url": "smallhall/assets/smallhall_ui.json",
+			"type": "sheet",
+			"name": "smallhall_ui_json",
+			"subkeys": "pk_recom_bg_png,pk_recom_go_png,pk_recom_man_png,pk_recom_women_png,small_point_png,smallclose_btn_png,smallcolor_1_png,smallcolor_2_png,smallcolorbg_w_png,smallfemale_icon_png,smallhall_accept_png,smallhall_back_png,smallhall_btn_b_png,smallhall_btn_blue_png,smallhall_btn_gray_png,smallhall_btn_w_png,smallhall_close_png,smallhall_color_28_png,smallhall_empty_png,smallhall_friend_png,smallhall_icon_back_png,smallhall_icon_bg_png,smallhall_laba_bg_png,smallhall_laba_png,smallhall_manbg_png,smallhall_n_person_png,smallhall_online_png,smallhall_pinfo_bg_png,smallhall_place_png,smallhall_play_png,smallhall_pop_bg_png,smallhall_prose_png,smallhall_sex_m_png,smallhall_sex_w_png,smallhall_start_png,smallhall_title_png,smallhall_womanbg_png,smallplace_bg_png,smallsex_man_info_png,smallsex_woman_info_png,smallvip_bg_1_png,smallvip_bg_y_1_png"
+		},
+		{
+			"url": "smallhall/assets/smallhall_bg_gray.png",
+			"type": "image",
+			"name": "smallhall_bg_gray_png"
+		},
+		{
+			"url": "smallhall/assets/smallhall_chatbg.png",
+			"type": "image",
+			"name": "smallhall_chatbg_png"
+		},
+		{
+			"url": "smallhall/assets/loadingnew.png",
+			"type": "image",
+			"name": "loadingnew_png"
+		},
+		{
+			"url": "smallhall/assets/color_28.png",
+			"type": "image",
+			"name": "color_28_png"
+		},
+		{
+			"url": "smallhall/assets/smallhall_count_bg.png",
+			"type": "image",
+			"name": "smallhall_count_bg_png"
+		},
+		{
+			"url": "smallhall/assets/loadingbg.jpg",
+			"type": "image",
+			"name": "loadingbg_jpg"
+		},
+		{
+			"url": "smallhall/assets/wealth_ui.json",
+			"type": "sheet",
+			"name": "wealth_ui_json",
+			"subkeys": "ml_w_lv_0_png,ml_w_lv_10_png,ml_w_lv_11_png,ml_w_lv_12_png,ml_w_lv_13_png,ml_w_lv_14_png,ml_w_lv_15_png,ml_w_lv_16_png,ml_w_lv_17_png,ml_w_lv_18_png,ml_w_lv_19_png,ml_w_lv_1_png,ml_w_lv_20_png,ml_w_lv_21_png,ml_w_lv_22_png,ml_w_lv_23_png,ml_w_lv_24_png,ml_w_lv_25_png,ml_w_lv_26_png,ml_w_lv_27_png,ml_w_lv_28_png,ml_w_lv_29_png,ml_w_lv_2_png,ml_w_lv_30_png,ml_w_lv_31_png,ml_w_lv_32_png,ml_w_lv_33_png,ml_w_lv_34_png,ml_w_lv_35_png,ml_w_lv_36_png,ml_w_lv_37_png,ml_w_lv_38_png,ml_w_lv_39_png,ml_w_lv_3_png,ml_w_lv_40_png,ml_w_lv_41_png,ml_w_lv_42_png,ml_w_lv_43_png,ml_w_lv_44_png,ml_w_lv_45_png,ml_w_lv_46_png,ml_w_lv_47_png,ml_w_lv_48_png,ml_w_lv_49_png,ml_w_lv_4_png,ml_w_lv_50_png,ml_w_lv_51_png,ml_w_lv_52_png,ml_w_lv_53_png,ml_w_lv_54_png,ml_w_lv_55_png,ml_w_lv_56_png,ml_w_lv_57_png,ml_w_lv_58_png,ml_w_lv_59_png,ml_w_lv_5_png,ml_w_lv_60_png,ml_w_lv_6_png,ml_w_lv_7_png,ml_w_lv_8_png,ml_w_lv_9_png"
+		},
+		{
+			"url": "smallhall/assets/smallhall_action.json",
+			"type": "sheet",
+			"name": "smallhall_action_json",
+			"subkeys": "smallleft_down_png,smallleft_up1_png,smallleft_up2_png,smallright_down_png,smallright_up_png"
+		},
+		{
+			"url": "smallhall/assets/smallhall_accept_request.png",
+			"type": "image",
+			"name": "smallhall_accept_request_png"
+		},
+		{
+			"url": "smallhall/assets/smallhall_add_friend.png",
+			"type": "image",
+			"name": "smallhall_add_friend_png"
+		},
+		{
+			"url": "smallhall/assets/smallhall_wait_accept.png",
+			"type": "image",
+			"name": "smallhall_wait_accept_png"
+		},
+		{
+			"url": "smallhall/assets/piicon/sg_piicon_100.png",
+			"type": "image",
+			"name": "sg_piicon_100_png"
+		},
+		{
+			"url": "smallhall/assets/piicon/sg_piicon_101.png",
+			"type": "image",
+			"name": "sg_piicon_101_png"
+		},
+		{
+			"url": "smallhall/assets/piicon/sg_piicon_102.png",
+			"type": "image",
+			"name": "sg_piicon_102_png"
+		},
+		{
+			"url": "smallhall/assets/piicon/sg_piicon_103.png",
+			"type": "image",
+			"name": "sg_piicon_103_png"
+		},
+		{
+			"url": "smallhall/assets/piicon/sg_piicon_104.png",
+			"type": "image",
+			"name": "sg_piicon_104_png"
+		},
+		{
+			"url": "smallhall/assets/piicon/sg_piicon_105.png",
+			"type": "image",
+			"name": "sg_piicon_105_png"
+		},
+		{
+			"url": "smallhall/assets/piicon/sg_piicon_106.png",
+			"type": "image",
+			"name": "sg_piicon_106_png"
+		},
+		{
+			"url": "smallhall/assets/piicon/sg_piicon_107.png",
+			"type": "image",
+			"name": "sg_piicon_107_png"
+		},
+		{
+			"url": "smallhall/assets/piicon/sg_piicon_108.png",
+			"type": "image",
+			"name": "sg_piicon_108_png"
+		},
+		{
+			"url": "smallhall/assets/piicon/sg_piicon_109.png",
+			"type": "image",
+			"name": "sg_piicon_109_png"
+		},
+		{
+			"url": "smallhall/assets/piicon/sg_piicon_110.png",
+			"type": "image",
+			"name": "sg_piicon_110_png"
+		},
+		{
+			"url": "smallhall/assets/piicon/sg_piicon_111.png",
+			"type": "image",
+			"name": "sg_piicon_111_png"
+		},
+		{
+			"url": "smallhall/assets/piicon/sg_piicon_112.png",
+			"type": "image",
+			"name": "sg_piicon_112_png"
+		},
+		{
+			"url": "smallhall/assets/piicon/sg_piicon_113.png",
+			"type": "image",
+			"name": "sg_piicon_113_png"
+		},
+		{
+			"url": "smallhall/assets/piicon/sg_piicon_114.png",
+			"type": "image",
+			"name": "sg_piicon_114_png"
+		},
+		{
+			"url": "smallhall/assets/piicon/sg_piicon_115.png",
+			"type": "image",
+			"name": "sg_piicon_115_png"
+		},
+		{
+			"url": "smallhall/assets/piicon/sg_piicon_200.png",
+			"type": "image",
+			"name": "sg_piicon_200_png"
+		},
+		{
+			"url": "smallhall/assets/piicon/sg_piicon_201.png",
+			"type": "image",
+			"name": "sg_piicon_201_png"
+		},
+		{
+			"url": "smallhall/assets/piicon/sg_piicon_202.png",
+			"type": "image",
+			"name": "sg_piicon_202_png"
+		},
+		{
+			"url": "smallhall/assets/piicon/sg_piicon_203.png",
+			"type": "image",
+			"name": "sg_piicon_203_png"
+		},
+		{
+			"url": "smallhall/assets/piicon/sg_piicon_1002.png",
+			"type": "image",
+			"name": "sg_piicon_1002_png"
+		},
+		{
+			"url": "smallhall/assets/game/sg_newicon_100.png",
+			"type": "image",
+			"name": "sg_newicon_100_png"
+		},
+		{
+			"url": "smallhall/assets/game/sg_newicon_101.png",
+			"type": "image",
+			"name": "sg_newicon_101_png"
+		},
+		{
+			"url": "smallhall/assets/game/sg_newicon_102.png",
+			"type": "image",
+			"name": "sg_newicon_102_png"
+		},
+		{
+			"url": "smallhall/assets/game/sg_newicon_103.png",
+			"type": "image",
+			"name": "sg_newicon_103_png"
+		},
+		{
+			"url": "smallhall/assets/game/sg_newicon_104.png",
+			"type": "image",
+			"name": "sg_newicon_104_png"
+		},
+		{
+			"url": "smallhall/assets/game/sg_newicon_105.png",
+			"type": "image",
+			"name": "sg_newicon_105_png"
+		},
+		{
+			"url": "smallhall/assets/game/sg_newicon_106.png",
+			"type": "image",
+			"name": "sg_newicon_106_png"
+		},
+		{
+			"url": "smallhall/assets/game/sg_newicon_107.png",
+			"type": "image",
+			"name": "sg_newicon_107_png"
+		},
+		{
+			"url": "smallhall/assets/game/sg_newicon_108.png",
+			"type": "image",
+			"name": "sg_newicon_108_png"
+		},
+		{
+			"url": "smallhall/assets/game/sg_newicon_109.png",
+			"type": "image",
+			"name": "sg_newicon_109_png"
+		},
+		{
+			"url": "smallhall/assets/game/sg_newicon_110.png",
+			"type": "image",
+			"name": "sg_newicon_110_png"
+		},
+		{
+			"url": "smallhall/assets/game/sg_newicon_111.png",
+			"type": "image",
+			"name": "sg_newicon_111_png"
+		},
+		{
+			"url": "smallhall/assets/game/sg_newicon_112.png",
+			"type": "image",
+			"name": "sg_newicon_112_png"
+		},
+		{
+			"url": "smallhall/assets/game/sg_newicon_113.png",
+			"type": "image",
+			"name": "sg_newicon_113_png"
+		},
+		{
+			"url": "smallhall/assets/game/sg_newicon_114.png",
+			"type": "image",
+			"name": "sg_newicon_114_png"
+		},
+		{
+			"url": "smallhall/assets/game/sg_newicon_115.png",
+			"type": "image",
+			"name": "sg_newicon_115_png"
+		},
+		{
+			"url": "smallhall/assets/multi-game/sg_mgicon_200.png",
+			"type": "image",
+			"name": "sg_mgicon_200_png"
+		},
+		{
+			"url": "smallhall/assets/multi-game/sg_mgicon_201.png",
+			"type": "image",
+			"name": "sg_mgicon_201_png"
+		},
+		{
+			"url": "smallhall/assets/multi-game/sg_mgicon_202.png",
+			"type": "image",
+			"name": "sg_mgicon_202_png"
+		},
+		{
+			"url": "smallhall/assets/multi-game/sg_mgicon_203.png",
+			"type": "image",
+			"name": "sg_mgicon_203_png"
+		},
+		{
+			"url": "smallhall/assets/multi-game/sg_mgicon_1002.png",
+			"type": "image",
+			"name": "sg_mgicon_1002_png"
+		},
+		{
+			"url": "smallhall/assets/bag/christmas_jd.png",
+			"type": "image",
+			"name": "christmas_jd_png"
+		},
+		{
+			"url": "smallhall/assets/bag/item_ChristmasSkin.png",
+			"type": "image",
+			"name": "item_ChristmasSkin_png"
+		},
+		{
+			"url": "smallhall/assets/bag/item_Christmas_decorate.png",
+			"type": "image",
+			"name": "item_Christmas_decorate_png"
+		},
+		{
+			"url": "smallhall/assets/bag/item_Christmas_skin.png",
+			"type": "image",
+			"name": "item_Christmas_skin_png"
+		},
+		{
+			"url": "smallhall/assets/bag/item_Socks_show.png",
+			"type": "image",
+			"name": "item_Socks_show_png"
+		},
+		{
+			"url": "smallhall/assets/bag/item_addtalktime.png",
+			"type": "image",
+			"name": "item_addtalktime_png"
+		},
+		{
+			"url": "smallhall/assets/bag/item_blackhouse.png",
+			"type": "image",
+			"name": "item_blackhouse_png"
+		},
+		{
+			"url": "smallhall/assets/bag/item_getrole.png",
+			"type": "image",
+			"name": "item_getrole_png"
+		},
+		{
+			"url": "smallhall/assets/bag/item_getrole_bear.png",
+			"type": "image",
+			"name": "item_getrole_bear_png"
+		},
+		{
+			"url": "smallhall/assets/bag/item_getrole_guard.png",
+			"type": "image",
+			"name": "item_getrole_guard_png"
+		},
+		{
+			"url": "smallhall/assets/bag/item_getrole_hunter.png",
+			"type": "image",
+			"name": "item_getrole_hunter_png"
+		},
+		{
+			"url": "smallhall/assets/bag/item_getrole_seer.png",
+			"type": "image",
+			"name": "item_getrole_seer_png"
+		},
+		{
+			"url": "smallhall/assets/bag/item_getrole_witch.png",
+			"type": "image",
+			"name": "item_getrole_witch_png"
+		},
+		{
+			"url": "smallhall/assets/bag/item_getrole_wolf.png",
+			"type": "image",
+			"name": "item_getrole_wolf_png"
+		},
+		{
+			"url": "smallhall/assets/bag/item_mentor.png",
+			"type": "image",
+			"name": "item_mentor_png"
+		},
+		{
+			"url": "smallhall/assets/bag/item_shengdanwa.png",
+			"type": "image",
+			"name": "item_shengdanwa_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_01.png",
+			"type": "image",
+			"name": "liaotian_icon_01_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_02.png",
+			"type": "image",
+			"name": "liaotian_icon_02_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_03.png",
+			"type": "image",
+			"name": "liaotian_icon_03_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_04.png",
+			"type": "image",
+			"name": "liaotian_icon_04_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_05.png",
+			"type": "image",
+			"name": "liaotian_icon_05_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_06.png",
+			"type": "image",
+			"name": "liaotian_icon_06_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_07.png",
+			"type": "image",
+			"name": "liaotian_icon_07_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_08.png",
+			"type": "image",
+			"name": "liaotian_icon_08_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_09.png",
+			"type": "image",
+			"name": "liaotian_icon_09_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_10.png",
+			"type": "image",
+			"name": "liaotian_icon_10_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_11.png",
+			"type": "image",
+			"name": "liaotian_icon_11_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_12.png",
+			"type": "image",
+			"name": "liaotian_icon_12_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_13.png",
+			"type": "image",
+			"name": "liaotian_icon_13_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_14.png",
+			"type": "image",
+			"name": "liaotian_icon_14_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_15.png",
+			"type": "image",
+			"name": "liaotian_icon_15_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_16.png",
+			"type": "image",
+			"name": "liaotian_icon_16_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_17.png",
+			"type": "image",
+			"name": "liaotian_icon_17_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_18.png",
+			"type": "image",
+			"name": "liaotian_icon_18_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_19.png",
+			"type": "image",
+			"name": "liaotian_icon_19_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_20.png",
+			"type": "image",
+			"name": "liaotian_icon_20_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_21.png",
+			"type": "image",
+			"name": "liaotian_icon_21_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_22.png",
+			"type": "image",
+			"name": "liaotian_icon_22_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_23.png",
+			"type": "image",
+			"name": "liaotian_icon_23_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_24.png",
+			"type": "image",
+			"name": "liaotian_icon_24_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_25.png",
+			"type": "image",
+			"name": "liaotian_icon_25_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_26.png",
+			"type": "image",
+			"name": "liaotian_icon_26_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_27.png",
+			"type": "image",
+			"name": "liaotian_icon_27_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_28.png",
+			"type": "image",
+			"name": "liaotian_icon_28_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_29.png",
+			"type": "image",
+			"name": "liaotian_icon_29_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_30.png",
+			"type": "image",
+			"name": "liaotian_icon_30_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_31.png",
+			"type": "image",
+			"name": "liaotian_icon_31_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_32.png",
+			"type": "image",
+			"name": "liaotian_icon_32_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_33.png",
+			"type": "image",
+			"name": "liaotian_icon_33_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_34.png",
+			"type": "image",
+			"name": "liaotian_icon_34_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_35.png",
+			"type": "image",
+			"name": "liaotian_icon_35_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_36.png",
+			"type": "image",
+			"name": "liaotian_icon_36_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_37.png",
+			"type": "image",
+			"name": "liaotian_icon_37_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_38.png",
+			"type": "image",
+			"name": "liaotian_icon_38_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_39.png",
+			"type": "image",
+			"name": "liaotian_icon_39_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_40.png",
+			"type": "image",
+			"name": "liaotian_icon_40_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_41.png",
+			"type": "image",
+			"name": "liaotian_icon_41_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_42.png",
+			"type": "image",
+			"name": "liaotian_icon_42_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_43.png",
+			"type": "image",
+			"name": "liaotian_icon_43_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_44.png",
+			"type": "image",
+			"name": "liaotian_icon_44_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_50.png",
+			"type": "image",
+			"name": "liaotian_icon_50_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_51.png",
+			"type": "image",
+			"name": "liaotian_icon_51_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_52.png",
+			"type": "image",
+			"name": "liaotian_icon_52_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_53.png",
+			"type": "image",
+			"name": "liaotian_icon_53_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_54.png",
+			"type": "image",
+			"name": "liaotian_icon_54_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_55.png",
+			"type": "image",
+			"name": "liaotian_icon_55_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_56.png",
+			"type": "image",
+			"name": "liaotian_icon_56_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_57.png",
+			"type": "image",
+			"name": "liaotian_icon_57_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_58.png",
+			"type": "image",
+			"name": "liaotian_icon_58_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_59.png",
+			"type": "image",
+			"name": "liaotian_icon_59_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_60.png",
+			"type": "image",
+			"name": "liaotian_icon_60_png"
+		},
+		{
+			"url": "smallhall/assets/bag/liaotian_icon_yuandan.png",
+			"type": "image",
+			"name": "liaotian_icon_yuandan_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_01.png",
+			"type": "image",
+			"name": "ruchang_icon_01_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_02.png",
+			"type": "image",
+			"name": "ruchang_icon_02_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_03.png",
+			"type": "image",
+			"name": "ruchang_icon_03_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_04.png",
+			"type": "image",
+			"name": "ruchang_icon_04_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_05.png",
+			"type": "image",
+			"name": "ruchang_icon_05_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_06.png",
+			"type": "image",
+			"name": "ruchang_icon_06_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_07.png",
+			"type": "image",
+			"name": "ruchang_icon_07_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_08.png",
+			"type": "image",
+			"name": "ruchang_icon_08_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_09.png",
+			"type": "image",
+			"name": "ruchang_icon_09_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_10.png",
+			"type": "image",
+			"name": "ruchang_icon_10_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_11.png",
+			"type": "image",
+			"name": "ruchang_icon_11_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_12.png",
+			"type": "image",
+			"name": "ruchang_icon_12_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_13.png",
+			"type": "image",
+			"name": "ruchang_icon_13_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_14.png",
+			"type": "image",
+			"name": "ruchang_icon_14_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_15.png",
+			"type": "image",
+			"name": "ruchang_icon_15_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_16.png",
+			"type": "image",
+			"name": "ruchang_icon_16_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_17.png",
+			"type": "image",
+			"name": "ruchang_icon_17_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_18.png",
+			"type": "image",
+			"name": "ruchang_icon_18_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_19.png",
+			"type": "image",
+			"name": "ruchang_icon_19_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_20.png",
+			"type": "image",
+			"name": "ruchang_icon_20_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_21.png",
+			"type": "image",
+			"name": "ruchang_icon_21_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_22.png",
+			"type": "image",
+			"name": "ruchang_icon_22_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_23.png",
+			"type": "image",
+			"name": "ruchang_icon_23_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_24.png",
+			"type": "image",
+			"name": "ruchang_icon_24_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_25.png",
+			"type": "image",
+			"name": "ruchang_icon_25_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_26.png",
+			"type": "image",
+			"name": "ruchang_icon_26_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_27.png",
+			"type": "image",
+			"name": "ruchang_icon_27_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_28.png",
+			"type": "image",
+			"name": "ruchang_icon_28_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_29.png",
+			"type": "image",
+			"name": "ruchang_icon_29_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_30.png",
+			"type": "image",
+			"name": "ruchang_icon_30_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_31.png",
+			"type": "image",
+			"name": "ruchang_icon_31_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_32.png",
+			"type": "image",
+			"name": "ruchang_icon_32_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_33.png",
+			"type": "image",
+			"name": "ruchang_icon_33_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_34.png",
+			"type": "image",
+			"name": "ruchang_icon_34_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_35.png",
+			"type": "image",
+			"name": "ruchang_icon_35_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_36.png",
+			"type": "image",
+			"name": "ruchang_icon_36_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_37.png",
+			"type": "image",
+			"name": "ruchang_icon_37_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_38.png",
+			"type": "image",
+			"name": "ruchang_icon_38_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_39.png",
+			"type": "image",
+			"name": "ruchang_icon_39_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_40.png",
+			"type": "image",
+			"name": "ruchang_icon_40_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_41.png",
+			"type": "image",
+			"name": "ruchang_icon_41_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_42.png",
+			"type": "image",
+			"name": "ruchang_icon_42_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_43.png",
+			"type": "image",
+			"name": "ruchang_icon_43_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_44.png",
+			"type": "image",
+			"name": "ruchang_icon_44_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_50.png",
+			"type": "image",
+			"name": "ruchang_icon_50_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_51.png",
+			"type": "image",
+			"name": "ruchang_icon_51_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_52.png",
+			"type": "image",
+			"name": "ruchang_icon_52_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_53.png",
+			"type": "image",
+			"name": "ruchang_icon_53_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_54.png",
+			"type": "image",
+			"name": "ruchang_icon_54_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_55.png",
+			"type": "image",
+			"name": "ruchang_icon_55_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_56.png",
+			"type": "image",
+			"name": "ruchang_icon_56_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_57.png",
+			"type": "image",
+			"name": "ruchang_icon_57_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_58.png",
+			"type": "image",
+			"name": "ruchang_icon_58_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_59.png",
+			"type": "image",
+			"name": "ruchang_icon_59_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_60.png",
+			"type": "image",
+			"name": "ruchang_icon_60_png"
+		},
+		{
+			"url": "smallhall/assets/bag/ruchang_icon_yuandan.png",
+			"type": "image",
+			"name": "ruchang_icon_yuandan_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_01.png",
+			"type": "image",
+			"name": "touxiang_icon_01_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_02.png",
+			"type": "image",
+			"name": "touxiang_icon_02_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_03.png",
+			"type": "image",
+			"name": "touxiang_icon_03_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_04.png",
+			"type": "image",
+			"name": "touxiang_icon_04_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_05.png",
+			"type": "image",
+			"name": "touxiang_icon_05_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_06.png",
+			"type": "image",
+			"name": "touxiang_icon_06_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_07.png",
+			"type": "image",
+			"name": "touxiang_icon_07_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_08.png",
+			"type": "image",
+			"name": "touxiang_icon_08_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_09.png",
+			"type": "image",
+			"name": "touxiang_icon_09_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_10.png",
+			"type": "image",
+			"name": "touxiang_icon_10_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_11.png",
+			"type": "image",
+			"name": "touxiang_icon_11_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_12.png",
+			"type": "image",
+			"name": "touxiang_icon_12_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_13.png",
+			"type": "image",
+			"name": "touxiang_icon_13_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_14.png",
+			"type": "image",
+			"name": "touxiang_icon_14_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_15.png",
+			"type": "image",
+			"name": "touxiang_icon_15_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_16.png",
+			"type": "image",
+			"name": "touxiang_icon_16_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_17.png",
+			"type": "image",
+			"name": "touxiang_icon_17_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_18.png",
+			"type": "image",
+			"name": "touxiang_icon_18_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_19.png",
+			"type": "image",
+			"name": "touxiang_icon_19_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_20.png",
+			"type": "image",
+			"name": "touxiang_icon_20_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_21.png",
+			"type": "image",
+			"name": "touxiang_icon_21_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_22.png",
+			"type": "image",
+			"name": "touxiang_icon_22_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_23.png",
+			"type": "image",
+			"name": "touxiang_icon_23_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_24.png",
+			"type": "image",
+			"name": "touxiang_icon_24_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_25.png",
+			"type": "image",
+			"name": "touxiang_icon_25_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_26.png",
+			"type": "image",
+			"name": "touxiang_icon_26_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_27.png",
+			"type": "image",
+			"name": "touxiang_icon_27_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_28.png",
+			"type": "image",
+			"name": "touxiang_icon_28_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_29.png",
+			"type": "image",
+			"name": "touxiang_icon_29_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_30.png",
+			"type": "image",
+			"name": "touxiang_icon_30_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_31.png",
+			"type": "image",
+			"name": "touxiang_icon_31_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_32.png",
+			"type": "image",
+			"name": "touxiang_icon_32_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_33.png",
+			"type": "image",
+			"name": "touxiang_icon_33_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_34.png",
+			"type": "image",
+			"name": "touxiang_icon_34_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_35.png",
+			"type": "image",
+			"name": "touxiang_icon_35_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_36.png",
+			"type": "image",
+			"name": "touxiang_icon_36_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_37.png",
+			"type": "image",
+			"name": "touxiang_icon_37_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_38.png",
+			"type": "image",
+			"name": "touxiang_icon_38_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_39.png",
+			"type": "image",
+			"name": "touxiang_icon_39_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_40.png",
+			"type": "image",
+			"name": "touxiang_icon_40_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_41.png",
+			"type": "image",
+			"name": "touxiang_icon_41_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_42.png",
+			"type": "image",
+			"name": "touxiang_icon_42_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_43.png",
+			"type": "image",
+			"name": "touxiang_icon_43_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_44.png",
+			"type": "image",
+			"name": "touxiang_icon_44_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_50.png",
+			"type": "image",
+			"name": "touxiang_icon_50_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_51.png",
+			"type": "image",
+			"name": "touxiang_icon_51_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_52.png",
+			"type": "image",
+			"name": "touxiang_icon_52_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_53.png",
+			"type": "image",
+			"name": "touxiang_icon_53_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_54.png",
+			"type": "image",
+			"name": "touxiang_icon_54_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_55.png",
+			"type": "image",
+			"name": "touxiang_icon_55_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_56.png",
+			"type": "image",
+			"name": "touxiang_icon_56_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_57.png",
+			"type": "image",
+			"name": "touxiang_icon_57_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_58.png",
+			"type": "image",
+			"name": "touxiang_icon_58_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_59.png",
+			"type": "image",
+			"name": "touxiang_icon_59_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_60.png",
+			"type": "image",
+			"name": "touxiang_icon_60_png"
+		},
+		{
+			"url": "smallhall/assets/bag/touxiang_icon_yuandan.png",
+			"type": "image",
+			"name": "touxiang_icon_yuandan_png"
+		},
+		{
+			"url": "smallhall/assets/bag/itemtype.json",
+			"type": "json",
+			"name": "itemtype_json"
+		},
+		{
+			"url": "smallhall/assets/bag/bag_ui.json",
+			"type": "sheet",
+			"name": "bag_ui_json",
+			"subkeys": "bag_buy_bg_png,bag_buy_button_png,bag_buy_dianquan_png,bag_buy_mobi_png,bag_manhead_png,bag_red_point_png,bag_womenhead_png,exit_bag_png,givecover_png,giveselectno_png,giveselectyes_png,item_framewhite_png,item_man_png,item_num_bg_png,item_svip_png,item_using_png,item_validtime_3_png,item_validtime_7_png,item_vip_png,item_wealth_png,item_woman_png"
+		},
+		{
+			"url": "smallhall/assets/multi-game/sg_mgicon_0.png",
+			"type": "image",
+			"name": "sg_mgicon_0_png"
+		},
+		{
+			"url": "smallhall/assets/smallhall_market.png",
+			"type": "image",
+			"name": "smallhall_market_png"
+		},
+		{
+			"url": "smallhall/assets/smallhall_charmrank.png",
+			"type": "image",
+			"name": "smallhall_charmrank_png"
+		},
+		{
+			"url": "smallhall/assets/smallhall_sg_title.png",
+			"type": "image",
+			"name": "smallhall_sg_title_png"
+		},
+		{
+			"url": "smallhall/assets/smallhall_mg_title.png",
+			"type": "image",
+			"name": "smallhall_mg_title_png"
+		},
+		{
+			"url": "smallhall/assets/vip/hotRoomFlag.png",
+			"type": "image",
+			"name": "hotRoomFlag_png"
+		},
+		{
+			"url": "smallhall/assets/vip/hotsexman.png",
+			"type": "image",
+			"name": "hotsexman_png"
+		},
+		{
+			"url": "smallhall/assets/vip/hotsexwoman.png",
+			"type": "image",
+			"name": "hotsexwoman_png"
+		},
+		{
+			"url": "smallhall/assets/vip/hotvipbg.json",
+			"type": "sheet",
+			"name": "hotvipbg_json",
+			"subkeys": "hotRoomb19_png,hotRoomb20_png,hotRoomb21_png,hotRoomb22_png,hotRoomb300_1_png,hotRoomb300_2_png,hotRoomb300_4_png,hotRoomb9_png,hotRoomf0_png,hotRoomf1_png,hotRoomf2_png,hotRoomf3_png,hotRoomf4_png,hotRoomf5_png"
+		},
+		{
+			"url": "smallhall/assets/charmrank/label.png",
+			"type": "image",
+			"name": "label_png"
+		},
+		{
+			"url": "smallhall/assets/charmrank/label_bg.png",
+			"type": "image",
+			"name": "label_bg_png"
+		},
+		{
+			"url": "smallhall/assets/charmrank/myinfo_bg.png",
+			"type": "image",
+			"name": "myinfo_bg_png"
+		},
+		{
+			"url": "smallhall/assets/charmrank/rank_1.png",
+			"type": "image",
+			"name": "rank_1_png"
+		},
+		{
+			"url": "smallhall/assets/charmrank/rank_2.png",
+			"type": "image",
+			"name": "rank_2_png"
+		},
+		{
+			"url": "smallhall/assets/charmrank/rank_3.png",
+			"type": "image",
+			"name": "rank_3_png"
+		},
+		{
+			"url": "smallhall/assets/charmrank/rank_order.png",
+			"type": "image",
+			"name": "rank_order_png"
+		},
+		{
+			"url": "smallhall/assets/charmrank/tips_bg.png",
+			"type": "image",
+			"name": "tips_bg_png"
+		},
+		{
+			"url": "smallhall/assets/charmrank/charm_img_4.png",
+			"type": "image",
+			"name": "charm_img_4_png"
+		},
+		{
+			"url": "smallhall/assets/charmrank/charm_img_mask_1.png",
+			"type": "image",
+			"name": "charm_img_mask_1_png"
+		},
+		{
+			"url": "smallhall/assets/charmrank/charm_img_1.png",
+			"type": "image",
+			"name": "charm_img_1_png"
+		},
+		{
+			"url": "smallhall/assets/charmrank/charm_img_rank1.png",
+			"type": "image",
+			"name": "charm_img_rank1_png"
+		},
+		{
+			"url": "smallhall/assets/charmrank/charm_img_rank2.png",
+			"type": "image",
+			"name": "charm_img_rank2_png"
+		},
+		{
+			"url": "smallhall/assets/charmrank/charm_img_rank0.png",
+			"type": "image",
+			"name": "charm_img_rank0_png"
+		},
+		{
+			"url": "smallhall/assets/charmrank/charm_img_tips.png",
+			"type": "image",
+			"name": "charm_img_tips_png"
+		},
+		{
+			"url": "smallhall/assets/vip/hotvip_location.png",
+			"type": "image",
+			"name": "hotvip_location_png"
+		},
+		{
+			"url": "smallhall/assets/friends/ellipse_blue.png",
+			"type": "image",
+			"name": "ellipse_blue_png"
+		},
+		{
+			"url": "smallhall/assets/friends/ellipse_red.png",
+			"type": "image",
+			"name": "ellipse_red_png"
+		},
+		{
+			"url": "smallhall/assets/friends/friends_close.png",
+			"type": "image",
+			"name": "friends_close_png"
+		},
+		{
+			"url": "smallhall/assets/friends/friends_open.png",
+			"type": "image",
+			"name": "friends_open_png"
+		},
+		{
+			"url": "smallhall/assets/friends/friends_setting.png",
+			"type": "image",
+			"name": "friends_setting_png"
+		},
+		{
+			"url": "smallhall/assets/friends/laba.png",
+			"type": "image",
+			"name": "laba_png"
+		},
+		{
+			"url": "smallhall/assets/friends/circle_red.png",
+			"type": "image",
+			"name": "circle_red_png"
+		},
+		{
+			"url": "smallhall/assets/friends/ellipse_grey.png",
+			"type": "image",
+			"name": "ellipse_grey_png"
+		},
+		{
+			"url": "smallhall/assets/friends/viproom_bg_04.png",
+			"type": "image",
+			"name": "viproom_bg_04_png"
+		},
+		{
+			"url": "smallhall/assets/friends/viproom_btn_01.png",
+			"type": "image",
+			"name": "viproom_btn_01_png"
+		},
+		{
+			"url": "smallhall/assets/friends/viproom_btn_02.png",
+			"type": "image",
+			"name": "viproom_btn_02_png"
+		},
+		{
+			"url": "smallhall/assets/friends/friend_add.png",
+			"type": "image",
+			"name": "friend_add_png"
+		},
+		{
+			"url": "smallhall/assets/friends/friend_giftadd.png",
+			"type": "image",
+			"name": "friend_giftadd_png"
+		},
+		{
+			"url": "smallhall/assets/game/sg_newicon_0.png",
+			"type": "image",
+			"name": "sg_newicon_0_png"
+		},
+		{
+			"url": "smallhall/assets/multi-game/sg_mgicon_204.png",
+			"type": "image",
+			"name": "sg_mgicon_204_png"
+		},
+		{
+			"url": "smallhall/assets/piicon/sg_piicon_204.png",
+			"type": "image",
+			"name": "sg_piicon_204_png"
+		}
+	]
+}
