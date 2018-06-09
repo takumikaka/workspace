@@ -6,8 +6,8 @@ from processers.get_cwd import getCwd
 class readJson(object):
     def __init__(self):
         self.get_cwd = getCwd()
-        self.part_two_cwd_json1 = 'sources/files/smallhall.res.json'
-        self.part_two_cwd_json2 = 'sources/files/smallRoom.res.json'
+        self.part_two_cwd_json1 = 'sources/files/hghall.res.json'
+        self.part_two_cwd_json2 = 'sources/files/HG_Auction.res.json'
 
     def read_json_one(self):
         part_one_cwd = self.get_cwd.run()

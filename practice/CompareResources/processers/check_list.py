@@ -26,7 +26,9 @@ class checkList(object):
         for i in range(len_list):
             for key in self.resources_list_one[i]:
                 if key == 'type' and self.resources_list_one[i]['type'] == 'sheet':
-                    self.list_one_sheet += self.resources_list_one[i]['subkeys'].split(',')
+                    if 'subkeys' in self.resources_list_one[i]:
+                        self.list_one_sheet += self.resources_list_one[i]['subkeys'].split(',')
+        print(self.list_one_sheet)
         return self.list_one_sheet
 
     def get_list_one(self):
@@ -48,7 +50,9 @@ class checkList(object):
         for i in range(len_list):
             for key in self.resources_list_two[i]:
                 if key == 'type' and self.resources_list_two[i]['type'] == 'sheet':
-                    self.list_two_sheet += self.resources_list_two[i]['subkeys'].split(',')
+                    if 'subkeys' in self.resources_list_two[i]:
+                        self.list_two_sheet += self.resources_list_two[i]['subkeys'].split(',')
+        print(self.list_two_sheet)
         return self.list_two_sheet
 
     def get_list_two(self):
