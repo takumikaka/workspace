@@ -1,6 +1,27 @@
 {
-    "name": "贝利亚",
-    "age": "未知",
-    "sex": true,
-    "kind":null
+  "url": "http://openapi.tuling123.com/openapi/api/v2",
+  "method": "post",
+  "type": "json",
+  "data": {
+    "reqType": 0,
+    "perception": {
+      "inputText": {
+        "text": "附近的酒店"
+      },
+      "inputImage": {
+        "url": "imageUrl"
+      },
+      "selfInfo": {
+        "location": {
+          "city": "成都",
+          "province": "成都",
+          "street": "春熙路"
+        }
+      }
+    },
+    "userInfo": {
+      "apiKey": "0cb72a7c84c3433eafeb2d727bd4ecc0",
+      "userId": "223516"
+    }
+  }
 }

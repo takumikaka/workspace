@@ -1,16 +1,9 @@
-# -*- coding:UTF-8 -*-
+# coding:UTF-8 -*-
 
-import json
 import requests
+import json
 
-############################################
-#读取文件
-#转换为字典并获取值
-#发送请求
-#获取相应
-############################################
-
-class analyzeDemo1(object):
+class analyzeDemo2(object):
     def __init__(self):
         self.headers = {
                         "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8",
@@ -24,41 +17,38 @@ class analyzeDemo1(object):
         }
 
     def readFile(self):
-        with open("demo1.json", "r") as f:
+        with open("demo2.json", "r") as f:
             content = f.read()
         return content
 
-    def strTodict(self, content):
-        list_dict = json.loads(content)
-        return list_dict
+    def strTojson(self, str):
+        j = json.loads(str)
+        return j
 
     def run(self):
-        content = self.readFile()
-        list_dict = self.strTodict(content)
         headers = self.headers
-
-        #获取对应的值
-        requests_url = list_dict["url"]
-        requests_method = list_dict["method"]
-        requests_key = list_dict["params"]["key"]
-        requests_info = list_dict["params"]["info"]
-
-        params = {
-                "key": requests_key,
-                "info": requests_info
-        }
+        content = self.readFile()
+        j = self.strTojson(content)
+        requests_data = j["data"]
+        requests_url = j["url"]
+        requests_method = j["method"]
 
         if requests_method == "get":
-            html = requests.get(headers = headers, url = requests_url, params = params)
+            html = requests.get(headers = headers, url = requests_url)
             text = html.text
         else:
-            html = requests.post(headers = headers, url = requests_url, params = params)
+            html = requests.post(headers = headers, url = requests_url, json = requests_data)
             text = html.text
+            status_code = html.status_code
+            reason = html.reason
+            content = html.content
+            headers = html.headers
+            cookies = html.cookies
 
-        print(text)
+        print(cookies)
 
 def main():
-    Action = analyzeDemo1()
+    Action = analyzeDemo2()
     Action.run()
 
 if __name__ == "__main__":
