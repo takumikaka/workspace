@@ -18,8 +18,9 @@ class OperationDatabase(object):
             cursor.execute(mysql_str1)
             cursor.execute(mysql_str2)
             db.commit()
-        except:
+        except Exception as e:
             db.rollback()
+            print(e)
 
     def check_onedata(self, cursor):
         cursor.execute("select * from employee where first_name = '张';")
@@ -30,8 +31,9 @@ class OperationDatabase(object):
         try:
             cursor.execute("delete from employee where age = %d;" % (23))
             db.commit()
-        except:
+        except Exception as e:
             db.rollback()
+            print(e)
 
     def check_data(self, cursor):
         cursor.execute("select * from employee;")

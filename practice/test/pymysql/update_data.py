@@ -19,8 +19,9 @@ class UpdateData(object):
         try:
             cursor.execute(sql_str)
             db.commit()
-        except:
+        except Exception as e:
             db.rollback()
+            print(e)
         db.close()
 
     def run(self):

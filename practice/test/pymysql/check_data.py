@@ -20,8 +20,9 @@ class CheckData(object):
         try:
             cursor.execute(sql_str)
             results = cursor.fetchall()
-        except:
-            print("数据查询无效!")
+        except Exception as e:
+            db.rollback()
+            print(e)
         return results
 
     def dict_list(self, dict_list):
@@ -33,8 +34,8 @@ class CheckData(object):
                 sex = row[3]
                 income = row[4]
             print("Welcome {0} {1}, he's age {2}.".format(fName, lName, age))
-        except:
-            print("数据不合法!")
+        except Exception as e:
+            print(e)
 
     def run(self):
         db, cursor = self.db_connect()

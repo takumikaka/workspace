@@ -19,8 +19,9 @@ class DelectData(object):
         try:
             cursor.execute(sql_str)
             db.commit()
-        except:
-            print("数据不合法!")
+        except Exception as e:
+            db.rollback()
+            print(e)
         db.close()
 
     def run(self):
