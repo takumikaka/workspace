@@ -1,0 +1,2 @@
+[%s] INFO [<module>:config.py,12] hello
+[2019-03-18 17:31:32] INFO [<module>:config.py,12] hello
