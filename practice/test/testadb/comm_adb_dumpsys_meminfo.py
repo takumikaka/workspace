@@ -3,7 +3,7 @@
 import os
 
 def send_command_msg():
-    f = os.popen(r"adb shell dumpsys meminfo com.immomo.momo")
+    f = os.popen(r"adb shell dumpsys meminfo xxx.xxx.xxx")
     cont_result = f.read()
     f.close()
     return cont_result
