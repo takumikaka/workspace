@@ -1,0 +1,1110 @@
+[2019-03-20 17:17:55] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 17:17:55] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/login/ HTTP/1.1" 200 21
+[2019-03-20 17:17:55] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 17:17:55] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/login/ HTTP/1.1" 200 42
+[2019-03-20 17:18:39] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 17:18:39] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/login/ HTTP/1.1" 200 21
+[2019-03-20 17:18:39] INFO [log_case_info: case_log.py 12] 测试用例: test_user_login_normal
+[2019-03-20 17:18:39] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/login/
+[2019-03-20 17:18:39] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-20 17:18:39] INFO [log_case_info: case_log.py 15] 期望数据: <h1>登录成功</h1>
+[2019-03-20 17:18:39] INFO [log_case_info: case_log.py 16] 实际数据: <h1>登录成功</h1>
+[2019-03-20 17:18:39] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 17:18:39] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/login/ HTTP/1.1" 200 42
+[2019-03-20 17:18:39] INFO [log_case_info: case_log.py 12] 测试用例: test_user_login_wrong
+[2019-03-20 17:18:39] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/login/
+[2019-03-20 17:18:39] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "1234567"}
+[2019-03-20 17:18:39] INFO [log_case_info: case_log.py 15] 期望数据: <h1>失败，用户名或密码错误</h1>
+[2019-03-20 17:18:39] INFO [log_case_info: case_log.py 16] 实际数据: <h1>失败，用户名或密码错误</h1>
+[2019-03-20 18:02:10] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:02:10] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-20 18:02:10] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_exist
+[2019-03-20 18:02:10] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:02:10] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-20 18:02:10] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-20 18:02:10] INFO [log_case_info: case_log.py 16] 实际数据: {
+  "code": "100001", 
+  "data": {
+    "name": "\u5f20\u4e09", 
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+  }, 
+  "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"
+}
+
+[2019-03-20 18:03:41] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:03:41] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-20 18:03:56] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:03:56] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-20 18:05:20] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:05:20] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-20 18:05:20] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_exist
+[2019-03-20 18:05:20] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:05:20] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-20 18:05:20] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-20 18:05:20] INFO [log_case_info: case_log.py 16] 实际数据: {
+  "code": "100001", 
+  "data": {
+    "name": "\u5f20\u4e09", 
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+  }, 
+  "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"
+}
+
+[2019-03-20 18:05:51] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:05:51] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-20 18:05:51] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_exist
+[2019-03-20 18:05:51] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:05:51] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-20 18:05:51] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-20 18:05:51] INFO [log_case_info: case_log.py 16] 实际数据: {
+  "code": "100001", 
+  "data": {
+    "name": "\u5f20\u4e09", 
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+  }, 
+  "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"
+}
+
+[2019-03-20 18:06:07] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:06:07] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-20 18:06:07] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_exist
+[2019-03-20 18:06:07] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:06:07] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-20 18:06:07] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-20 18:06:07] INFO [log_case_info: case_log.py 16] 实际数据: {
+  "code": "100001", 
+  "data": {
+    "name": "\u5f20\u4e09", 
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+  }, 
+  "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"
+}
+
+[2019-03-20 18:06:07] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:06:07] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 500 None
+[2019-03-20 18:06:07] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_nomal
+[2019-03-20 18:06:07] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:06:07] INFO [log_case_info: case_log.py 14] 发送数据: {"name": “范冰冰", "password": "123456"}
+[2019-03-20 18:06:07] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100000","data":{"name":"范冰冰","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"成功"}
+[2019-03-20 18:06:07] INFO [log_case_info: case_log.py 16] 实际数据: <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <title>AttributeError: 'str' object has no attribute 'get' // Werkzeug Debugger</title>
+    <link rel="stylesheet" href="?__debugger__=yes&amp;cmd=resource&amp;f=style.css"
+        type="text/css">
+    <!-- We need to make sure this has a favicon so that the debugger does
+         not by accident trigger a request to /favicon.ico which might
+         change the application state. -->
+    <link rel="shortcut icon"
+        href="?__debugger__=yes&amp;cmd=resource&amp;f=console.png">
+    <script src="?__debugger__=yes&amp;cmd=resource&amp;f=jquery.js"></script>
+    <script src="?__debugger__=yes&amp;cmd=resource&amp;f=debugger.js"></script>
+    <script type="text/javascript">
+      var TRACEBACK = 140667119639800,
+          CONSOLE_MODE = false,
+          EVALEX = true,
+          EVALEX_TRUSTED = false,
+          SECRET = "lR32f6PUEfJPupIq0wHZ";
+    </script>
+  </head>
+  <body style="background-color: #fff">
+    <div class="debugger">
+<h1>builtins.AttributeError</h1>
+<div class="detail">
+  <p class="errormsg">AttributeError: 'str' object has no attribute 'get'</p>
+</div>
+<h2 class="traceback">Traceback <em>(most recent call last)</em></h2>
+<div class="traceback">
+  
+  <ul><li><div class="frame" id="frame-140667119639968">
+  <h4>File <cite class="filename">"/usr/local/python3/lib/python3.6/site-packages/flask/app.py"</cite>,
+      line <em class="line">2309</em>,
+      in <code class="function">__call__</code></h4>
+  <div class="source"><pre class="line before"><span class="ws"></span> </pre>
+<pre class="line before"><span class="ws">    </span>def __call__(self, environ, start_response):</pre>
+<pre class="line before"><span class="ws">        </span>&quot;&quot;&quot;The WSGI server calls the Flask application object as the</pre>
+<pre class="line before"><span class="ws">        </span>WSGI application. This calls :meth:`wsgi_app` which can be</pre>
+<pre class="line before"><span class="ws">        </span>wrapped to applying middleware.&quot;&quot;&quot;</pre>
+<pre class="line current"><span class="ws">        </span>return self.wsgi_app(environ, start_response)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>def __repr__(self):</pre>
+<pre class="line after"><span class="ws">        </span>return '&lt;%s %r&gt;' % (</pre>
+<pre class="line after"><span class="ws">            </span>self.__class__.__name__,</pre>
+<pre class="line after"><span class="ws">            </span>self.name,</pre></div>
+</div>
+
+<li><div class="frame" id="frame-140667119638400">
+  <h4>File <cite class="filename">"/usr/local/python3/lib/python3.6/site-packages/flask/app.py"</cite>,
+      line <em class="line">2295</em>,
+      in <code class="function">wsgi_app</code></h4>
+  <div class="source"><pre class="line before"><span class="ws">            </span>try:</pre>
+<pre class="line before"><span class="ws">                </span>ctx.push()</pre>
+<pre class="line before"><span class="ws">                </span>response = self.full_dispatch_request()</pre>
+<pre class="line before"><span class="ws">            </span>except Exception as e:</pre>
+<pre class="line before"><span class="ws">                </span>error = e</pre>
+<pre class="line current"><span class="ws">                </span>response = self.handle_exception(e)</pre>
+<pre class="line after"><span class="ws">            </span>except:</pre>
+<pre class="line after"><span class="ws">                </span>error = sys.exc_info()[1]</pre>
+<pre class="line after"><span class="ws">                </span>raise</pre>
+<pre class="line after"><span class="ws">            </span>return response(environ, start_response)</pre>
+<pre class="line after"><span class="ws">        </span>finally:</pre></div>
+</div>
+
+<li><div class="frame" id="frame-140667119639408">
+  <h4>File <cite class="filename">"/usr/local/python3/lib/python3.6/site-packages/flask_restful/__init__.py"</cite>,
+      line <em class="line">269</em>,
+      in <code class="function">error_router</code></h4>
+  <div class="source"><pre class="line before"><span class="ws">        </span>if self._has_fr_route():</pre>
+<pre class="line before"><span class="ws">            </span>try:</pre>
+<pre class="line before"><span class="ws">                </span>return self.handle_error(e)</pre>
+<pre class="line before"><span class="ws">            </span>except Exception:</pre>
+<pre class="line before"><span class="ws">                </span>pass  # Fall through to original handler</pre>
+<pre class="line current"><span class="ws">        </span>return original_handler(e)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>def handle_error(self, e):</pre>
+<pre class="line after"><span class="ws">        </span>&quot;&quot;&quot;Error handler for the API transforms a raised exception into a Flask</pre>
+<pre class="line after"><span class="ws">        </span>response, with the appropriate HTTP status code and body.</pre>
+<pre class="line after"><span class="ws"></span> </pre></div>
+</div>
+
+<li><div class="frame" id="frame-140667119638680">
+  <h4>File <cite class="filename">"/usr/local/python3/lib/python3.6/site-packages/flask/app.py"</cite>,
+      line <em class="line">1741</em>,
+      in <code class="function">handle_exception</code></h4>
+  <div class="source"><pre class="line before"><span class="ws">            </span># if we want to repropagate the exception, we can attempt to</pre>
+<pre class="line before"><span class="ws">            </span># raise it with the whole traceback in case we can do that</pre>
+<pre class="line before"><span class="ws">            </span># (the function was actually called from the except part)</pre>
+<pre class="line before"><span class="ws">            </span># otherwise, we just raise the error again</pre>
+<pre class="line before"><span class="ws">            </span>if exc_value is e:</pre>
+<pre class="line current"><span class="ws">                </span>reraise(exc_type, exc_value, tb)</pre>
+<pre class="line after"><span class="ws">            </span>else:</pre>
+<pre class="line after"><span class="ws">                </span>raise e</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">        </span>self.log_exception((exc_type, exc_value, tb))</pre>
+<pre class="line after"><span class="ws">        </span>if handler is None:</pre></div>
+</div>
+
+<li><div class="frame" id="frame-140667119638456">
+  <h4>File <cite class="filename">"/usr/local/python3/lib/python3.6/site-packages/flask/_compat.py"</cite>,
+      line <em class="line">35</em>,
+      in <code class="function">reraise</code></h4>
+  <div class="source"><pre class="line before"><span class="ws">    </span>from io import StringIO</pre>
+<pre class="line before"><span class="ws"></span> </pre>
+<pre class="line before"><span class="ws">    </span>def reraise(tp, value, tb=None):</pre>
+<pre class="line before"><span class="ws">        </span>if value.__traceback__ is not tb:</pre>
+<pre class="line before"><span class="ws">            </span>raise value.with_traceback(tb)</pre>
+<pre class="line current"><span class="ws">        </span>raise value</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>implements_to_string = _identity</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws"></span>else:</pre>
+<pre class="line after"><span class="ws">    </span>text_type = unicode</pre></div>
+</div>
+
+<li><div class="frame" id="frame-140667097284280">
+  <h4>File <cite class="filename">"/usr/local/python3/lib/python3.6/site-packages/flask/app.py"</cite>,
+      line <em class="line">2292</em>,
+      in <code class="function">wsgi_app</code></h4>
+  <div class="source"><pre class="line before"><span class="ws">        </span>ctx = self.request_context(environ)</pre>
+<pre class="line before"><span class="ws">        </span>error = None</pre>
+<pre class="line before"><span class="ws">        </span>try:</pre>
+<pre class="line before"><span class="ws">            </span>try:</pre>
+<pre class="line before"><span class="ws">                </span>ctx.push()</pre>
+<pre class="line current"><span class="ws">                </span>response = self.full_dispatch_request()</pre>
+<pre class="line after"><span class="ws">            </span>except Exception as e:</pre>
+<pre class="line after"><span class="ws">                </span>error = e</pre>
+<pre class="line after"><span class="ws">                </span>response = self.handle_exception(e)</pre>
+<pre class="line after"><span class="ws">            </span>except:</pre>
+<pre class="line after"><span class="ws">                </span>error = sys.exc_info()[1]</pre></div>
+</div>
+
+<li><div class="frame" id="frame-140667097281704">
+  <h4>File <cite class="filename">"/usr/local/python3/lib/python3.6/site-packages/flask/app.py"</cite>,
+      line <em class="line">1815</em>,
+      in <code class="function">full_dispatch_request</code></h4>
+  <div class="source"><pre class="line before"><span class="ws">            </span>request_started.send(self)</pre>
+<pre class="line before"><span class="ws">            </span>rv = self.preprocess_request()</pre>
+<pre class="line before"><span class="ws">            </span>if rv is None:</pre>
+<pre class="line before"><span class="ws">                </span>rv = self.dispatch_request()</pre>
+<pre class="line before"><span class="ws">        </span>except Exception as e:</pre>
+<pre class="line current"><span class="ws">            </span>rv = self.handle_user_exception(e)</pre>
+<pre class="line after"><span class="ws">        </span>return self.finalize_request(rv)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>def finalize_request(self, rv, from_error_handler=False):</pre>
+<pre class="line after"><span class="ws">        </span>&quot;&quot;&quot;Given the return value from a view function this finalizes</pre>
+<pre class="line after"><span class="ws">        </span>the request by converting it into a response and invoking the</pre></div>
+</div>
+
+<li><div class="frame" id="frame-140667097281480">
+  <h4>File <cite class="filename">"/usr/local/python3/lib/python3.6/site-packages/flask_restful/__init__.py"</cite>,
+      line <em class="line">269</em>,
+      in <code class="function">error_router</code></h4>
+  <div class="source"><pre class="line before"><span class="ws">        </span>if self._has_fr_route():</pre>
+<pre class="line before"><span class="ws">            </span>try:</pre>
+<pre class="line before"><span class="ws">                </span>return self.handle_error(e)</pre>
+<pre class="line before"><span class="ws">            </span>except Exception:</pre>
+<pre class="line before"><span class="ws">                </span>pass  # Fall through to original handler</pre>
+<pre class="line current"><span class="ws">        </span>return original_handler(e)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>def handle_error(self, e):</pre>
+<pre class="line after"><span class="ws">        </span>&quot;&quot;&quot;Error handler for the API transforms a raised exception into a Flask</pre>
+<pre class="line after"><span class="ws">        </span>response, with the appropriate HTTP status code and body.</pre>
+<pre class="line after"><span class="ws"></span> </pre></div>
+</div>
+
+<li><div class="frame" id="frame-140667097284056">
+  <h4>File <cite class="filename">"/usr/local/python3/lib/python3.6/site-packages/flask/app.py"</cite>,
+      line <em class="line">1718</em>,
+      in <code class="function">handle_user_exception</code></h4>
+  <div class="source"><pre class="line before"><span class="ws">            </span>return self.handle_http_exception(e)</pre>
+<pre class="line before"><span class="ws"></span> </pre>
+<pre class="line before"><span class="ws">        </span>handler = self._find_error_handler(e)</pre>
+<pre class="line before"><span class="ws"></span> </pre>
+<pre class="line before"><span class="ws">        </span>if handler is None:</pre>
+<pre class="line current"><span class="ws">            </span>reraise(exc_type, exc_value, tb)</pre>
+<pre class="line after"><span class="ws">        </span>return handler(e)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>def handle_exception(self, e):</pre>
+<pre class="line after"><span class="ws">        </span>&quot;&quot;&quot;Default exception handling that kicks in when an exception</pre>
+<pre class="line after"><span class="ws">        </span>occurs that is not caught.  In debug mode the exception will</pre></div>
+</div>
+
+<li><div class="frame" id="frame-140667097282096">
+  <h4>File <cite class="filename">"/usr/local/python3/lib/python3.6/site-packages/flask/_compat.py"</cite>,
+      line <em class="line">35</em>,
+      in <code class="function">reraise</code></h4>
+  <div class="source"><pre class="line before"><span class="ws">    </span>from io import StringIO</pre>
+<pre class="line before"><span class="ws"></span> </pre>
+<pre class="line before"><span class="ws">    </span>def reraise(tp, value, tb=None):</pre>
+<pre class="line before"><span class="ws">        </span>if value.__traceback__ is not tb:</pre>
+<pre class="line before"><span class="ws">            </span>raise value.with_traceback(tb)</pre>
+<pre class="line current"><span class="ws">        </span>raise value</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>implements_to_string = _identity</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws"></span>else:</pre>
+<pre class="line after"><span class="ws">    </span>text_type = unicode</pre></div>
+</div>
+
+<li><div class="frame" id="frame-140667097283496">
+  <h4>File <cite class="filename">"/usr/local/python3/lib/python3.6/site-packages/flask/app.py"</cite>,
+      line <em class="line">1813</em>,
+      in <code class="function">full_dispatch_request</code></h4>
+  <div class="source"><pre class="line before"><span class="ws">        </span>self.try_trigger_before_first_request_functions()</pre>
+<pre class="line before"><span class="ws">        </span>try:</pre>
+<pre class="line before"><span class="ws">            </span>request_started.send(self)</pre>
+<pre class="line before"><span class="ws">            </span>rv = self.preprocess_request()</pre>
+<pre class="line before"><span class="ws">            </span>if rv is None:</pre>
+<pre class="line current"><span class="ws">                </span>rv = self.dispatch_request()</pre>
+<pre class="line after"><span class="ws">        </span>except Exception as e:</pre>
+<pre class="line after"><span class="ws">            </span>rv = self.handle_user_exception(e)</pre>
+<pre class="line after"><span class="ws">        </span>return self.finalize_request(rv)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>def finalize_request(self, rv, from_error_handler=False):</pre></div>
+</div>
+
+<li><div class="frame" id="frame-140667097283160">
+  <h4>File <cite class="filename">"/usr/local/python3/lib/python3.6/site-packages/flask/app.py"</cite>,
+      line <em class="line">1799</em>,
+      in <code class="function">dispatch_request</code></h4>
+  <div class="source"><pre class="line before"><span class="ws">        </span># request came with the OPTIONS method, reply automatically</pre>
+<pre class="line before"><span class="ws">        </span>if getattr(rule, 'provide_automatic_options', False) \</pre>
+<pre class="line before"><span class="ws">           </span>and req.method == 'OPTIONS':</pre>
+<pre class="line before"><span class="ws">            </span>return self.make_default_options_response()</pre>
+<pre class="line before"><span class="ws">        </span># otherwise dispatch to the handler for that endpoint</pre>
+<pre class="line current"><span class="ws">        </span>return self.view_functions[rule.endpoint](**req.view_args)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>def full_dispatch_request(self):</pre>
+<pre class="line after"><span class="ws">        </span>&quot;&quot;&quot;Dispatches the request and on top of that performs request</pre>
+<pre class="line after"><span class="ws">        </span>pre and postprocessing as well as HTTP exception catching and</pre>
+<pre class="line after"><span class="ws">        </span>error handling.</pre></div>
+</div>
+
+<li><div class="frame" id="frame-140667097283384">
+  <h4>File <cite class="filename">"/root/hanzhichao/user/rest_user_api.py"</cite>,
+      line <em class="line">98</em>,
+      in <code class="function">reg</code></h4>
+  <div class="source"><pre class="line before"><span class="ws">    </span>if 'password' not in request.json:</pre>
+<pre class="line before"><span class="ws">        </span>code = '100004'</pre>
+<pre class="line before"><span class="ws">        </span>msg = 'password参数缺失'</pre>
+<pre class="line before"><span class="ws">        </span>return jsonify({&quot;code&quot;: code, &quot;msg&quot;: msg, &quot;data&quot;: {}})</pre>
+<pre class="line before"><span class="ws"></span> </pre>
+<pre class="line current"><span class="ws">    </span>name = request.json.get('name')</pre>
+<pre class="line after"><span class="ws">    </span>password = request.json.get('password')</pre>
+<pre class="line after"><span class="ws">    </span>u = User()</pre>
+<pre class="line after"><span class="ws">    </span>status = u.addUser(name, password)</pre>
+<pre class="line after"><span class="ws">    </span>if status is True:</pre>
+<pre class="line after"><span class="ws">        </span>code = '100000'</pre></div>
+</div>
+</ul>
+  <blockquote>AttributeError: 'str' object has no attribute 'get'</blockquote>
+</div>
+
+<div class="plain">
+  <form action="/?__debugger__=yes&amp;cmd=paste" method="post">
+    <p>
+      <input type="hidden" name="language" value="pytb">
+      This is the Copy/Paste friendly version of the traceback.  <span
+      class="pastemessage">You can also paste this traceback into
+      a <a href="https://gist.github.com/">gist</a>:
+      <input type="submit" value="create paste"></span>
+    </p>
+    <textarea cols="50" rows="10" name="code" readonly>Traceback (most recent call last):
+  File &quot;/usr/local/python3/lib/python3.6/site-packages/flask/app.py&quot;, line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File &quot;/usr/local/python3/lib/python3.6/site-packages/flask/app.py&quot;, line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File &quot;/usr/local/python3/lib/python3.6/site-packages/flask_restful/__init__.py&quot;, line 269, in error_router
+    return original_handler(e)
+  File &quot;/usr/local/python3/lib/python3.6/site-packages/flask/app.py&quot;, line 1741, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File &quot;/usr/local/python3/lib/python3.6/site-packages/flask/_compat.py&quot;, line 35, in reraise
+    raise value
+  File &quot;/usr/local/python3/lib/python3.6/site-packages/flask/app.py&quot;, line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File &quot;/usr/local/python3/lib/python3.6/site-packages/flask/app.py&quot;, line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File &quot;/usr/local/python3/lib/python3.6/site-packages/flask_restful/__init__.py&quot;, line 269, in error_router
+    return original_handler(e)
+  File &quot;/usr/local/python3/lib/python3.6/site-packages/flask/app.py&quot;, line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File &quot;/usr/local/python3/lib/python3.6/site-packages/flask/_compat.py&quot;, line 35, in reraise
+    raise value
+  File &quot;/usr/local/python3/lib/python3.6/site-packages/flask/app.py&quot;, line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File &quot;/usr/local/python3/lib/python3.6/site-packages/flask/app.py&quot;, line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File &quot;/root/hanzhichao/user/rest_user_api.py&quot;, line 98, in reg
+    name = request.json.get('name')
+AttributeError: 'str' object has no attribute 'get'</textarea>
+  </form>
+</div>
+<div class="explanation">
+  The debugger caught an exception in your WSGI application.  You can now
+  look at the traceback which led to the error.  <span class="nojavascript">
+  If you enable JavaScript you can also use additional features such as code
+  execution (if the evalex feature is enabled), automatic pasting of the
+  exceptions and much more.</span>
+</div>
+      <div class="footer">
+        Brought to you by <strong class="arthur">DON'T PANIC</strong>, your
+        friendly Werkzeug powered traceback interpreter.
+      </div>
+    </div>
+
+    <div class="pin-prompt">
+      <div class="inner">
+        <h3>Console Locked</h3>
+        <p>
+          The console is locked and needs to be unlocked by entering the PIN.
+          You can find the PIN printed out on the standard output of your
+          shell that runs the server.
+        <form>
+          <p>PIN:
+            <input type=text name=pin size=14>
+            <input type=submit name=btn value="Confirm Pin">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!--
+
+Traceback (most recent call last):
+  File "/usr/local/python3/lib/python3.6/site-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/python3/lib/python3.6/site-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/python3/lib/python3.6/site-packages/flask_restful/__init__.py", line 269, in error_router
+    return original_handler(e)
+  File "/usr/local/python3/lib/python3.6/site-packages/flask/app.py", line 1741, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/python3/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/python3/lib/python3.6/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/python3/lib/python3.6/site-packages/flask/app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/python3/lib/python3.6/site-packages/flask_restful/__init__.py", line 269, in error_router
+    return original_handler(e)
+  File "/usr/local/python3/lib/python3.6/site-packages/flask/app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/python3/lib/python3.6/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/python3/lib/python3.6/site-packages/flask/app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/python3/lib/python3.6/site-packages/flask/app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/root/hanzhichao/user/rest_user_api.py", line 98, in reg
+    name = request.json.get('name')
+AttributeError: 'str' object has no attribute 'get'
+
+-->
+
+[2019-03-20 18:06:33] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:06:33] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-20 18:06:33] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_exist
+[2019-03-20 18:06:33] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:06:33] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-20 18:06:33] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-20 18:06:33] INFO [log_case_info: case_log.py 16] 实际数据: {
+  "code": "100001", 
+  "data": {
+    "name": "\u5f20\u4e09", 
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+  }, 
+  "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"
+}
+
+[2019-03-20 18:06:33] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:07:57] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:07:57] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-20 18:07:57] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_exist
+[2019-03-20 18:07:57] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:07:57] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-20 18:07:57] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-20 18:07:57] INFO [log_case_info: case_log.py 16] 实际数据: {
+  "code": "100001", 
+  "data": {
+    "name": "\u5f20\u4e09", 
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+  }, 
+  "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"
+}
+
+[2019-03-20 18:08:33] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:08:33] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-20 18:08:33] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_exist
+[2019-03-20 18:08:33] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:08:33] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-20 18:08:33] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-20 18:08:33] INFO [log_case_info: case_log.py 16] 实际数据: {
+  "code": "100001", 
+  "data": {
+    "name": "\u5f20\u4e09", 
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+  }, 
+  "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"
+}
+
+[2019-03-20 18:09:28] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:09:29] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-20 18:09:29] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_exist
+[2019-03-20 18:09:29] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:09:29] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-20 18:09:29] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-20 18:09:29] INFO [log_case_info: case_log.py 16] 实际数据: {
+  "code": "100001", 
+  "data": {
+    "name": "\u5f20\u4e09", 
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+  }, 
+  "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"
+}
+
+[2019-03-20 18:10:35] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:10:36] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-20 18:10:36] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_exist
+[2019-03-20 18:10:36] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:10:36] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-20 18:10:36] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-20 18:10:36] INFO [log_case_info: case_log.py 16] 实际数据: {
+  "code": "100001", 
+  "data": {
+    "name": "\u5f20\u4e09", 
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+  }, 
+  "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"
+}
+
+[2019-03-20 18:11:14] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:11:14] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-20 18:11:14] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_exist
+[2019-03-20 18:11:14] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:11:14] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-20 18:11:14] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-20 18:11:14] INFO [log_case_info: case_log.py 16] 实际数据: {
+  "code": "100001", 
+  "data": {
+    "name": "\u5f20\u4e09", 
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+  }, 
+  "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"
+}
+
+[2019-03-20 18:25:17] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:25:17] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-20 18:25:17] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_exist
+[2019-03-20 18:25:17] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:25:17] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-20 18:25:17] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-20 18:25:17] INFO [log_case_info: case_log.py 16] 实际数据: {
+  "code": "100001", 
+  "data": {
+    "name": "\u5f20\u4e09", 
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+  }, 
+  "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"
+}
+
+[2019-03-20 18:33:32] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:33:32] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-20 18:33:32] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_exist
+[2019-03-20 18:33:32] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:33:32] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-20 18:33:32] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-20 18:33:32] INFO [log_case_info: case_log.py 16] 实际数据: {
+  "code": "100001", 
+  "data": {
+    "name": "\u5f20\u4e09", 
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+  }, 
+  "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"
+}
+
+[2019-03-20 18:33:32] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:33:32] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 153
+[2019-03-20 18:33:32] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_nomal
+[2019-03-20 18:33:32] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:33:32] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三三", "password": "123456"}
+[2019-03-20 18:33:32] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100000","data":{"name":"张三三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"成功"}
+[2019-03-20 18:33:32] INFO [log_case_info: case_log.py 16] 实际数据: {
+  "code": "100000", 
+  "data": {
+    "name": "\u5f20\u4e09\u4e09", 
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+  }, 
+  "msg": "\u6210\u529f"
+}
+
+[2019-03-20 18:34:31] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:34:31] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-20 18:34:31] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_exist
+[2019-03-20 18:34:31] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:34:31] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-20 18:34:31] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-20 18:34:31] INFO [log_case_info: case_log.py 16] 实际数据: {
+  "code": "100001", 
+  "data": {
+    "name": "\u5f20\u4e09", 
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+  }, 
+  "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"
+}
+
+[2019-03-20 18:34:31] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:34:31] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 189
+[2019-03-20 18:35:09] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:35:09] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-20 18:35:09] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_exist
+[2019-03-20 18:35:09] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:35:09] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-20 18:35:09] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-20 18:35:09] INFO [log_case_info: case_log.py 16] 实际数据: {
+  "code": "100001", 
+  "data": {
+    "name": "\u5f20\u4e09", 
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+  }, 
+  "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"
+}
+
+[2019-03-20 18:35:09] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:35:09] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 189
+[2019-03-20 18:35:09] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_nomal
+[2019-03-20 18:35:09] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:35:09] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三三", "password": "123456"}
+[2019-03-20 18:35:09] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100000","data":{"name":"张三三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"成功"}
+[2019-03-20 18:35:09] INFO [log_case_info: case_log.py 16] 实际数据: {'code': '100001', 'data': {'name': '张三三', 'password': 'e10adc3949ba59abbe56e057f20f883e'}, 'msg': '失败，用户已存在'}
+[2019-03-20 18:35:38] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:35:38] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-20 18:35:38] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_exist
+[2019-03-20 18:35:38] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:35:38] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-20 18:35:38] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-20 18:35:38] INFO [log_case_info: case_log.py 16] 实际数据: {
+  "code": "100001", 
+  "data": {
+    "name": "\u5f20\u4e09", 
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+  }, 
+  "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"
+}
+
+[2019-03-20 18:35:38] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:35:38] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 189
+[2019-03-20 18:35:38] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_nomal
+[2019-03-20 18:35:38] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:35:38] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三三", "password": "123456"}
+[2019-03-20 18:35:38] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100000","data":{"name":"张三三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"成功"}
+[2019-03-20 18:35:38] INFO [log_case_info: case_log.py 16] 实际数据: {'code': '100001', 'data': {'name': '张三三', 'password': 'e10adc3949ba59abbe56e057f20f883e'}, 'msg': '失败，用户已存在'}
+[2019-03-20 18:36:07] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:36:07] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-20 18:36:07] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_exist
+[2019-03-20 18:36:07] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:36:07] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-20 18:36:07] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-20 18:36:07] INFO [log_case_info: case_log.py 16] 实际数据: {
+  "code": "100001", 
+  "data": {
+    "name": "\u5f20\u4e09", 
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+  }, 
+  "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"
+}
+
+[2019-03-20 18:36:07] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:36:07] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 189
+[2019-03-20 18:36:07] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_nomal
+[2019-03-20 18:36:07] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:36:07] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三三", "password": "123456"}
+[2019-03-20 18:36:07] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100000","data":{"name":"张三三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"成功"}
+[2019-03-20 18:36:07] INFO [log_case_info: case_log.py 16] 实际数据: {'code': '100001', 'data': {'name': '张三三', 'password': 'e10adc3949ba59abbe56e057f20f883e'}, 'msg': '失败，用户已存在'}
+[2019-03-20 18:36:28] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:36:28] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-20 18:36:28] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_exist
+[2019-03-20 18:36:28] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:36:28] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-20 18:36:28] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-20 18:36:28] INFO [log_case_info: case_log.py 16] 实际数据: {
+  "code": "100001", 
+  "data": {
+    "name": "\u5f20\u4e09", 
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+  }, 
+  "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"
+}
+
+[2019-03-20 18:36:28] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:36:28] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 189
+[2019-03-20 18:36:28] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_nomal
+[2019-03-20 18:36:28] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:36:28] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三三", "password": "123456"}
+[2019-03-20 18:36:28] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100000","data":{"name":"张三三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"成功"}
+[2019-03-20 18:36:28] INFO [log_case_info: case_log.py 16] 实际数据: {'code': '100001', 'data': {'name': '张三三', 'password': 'e10adc3949ba59abbe56e057f20f883e'}, 'msg': '失败，用户已存在'}
+[2019-03-20 18:39:05] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:39:05] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-20 18:39:05] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_exist
+[2019-03-20 18:39:05] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:39:05] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-20 18:39:05] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-20 18:39:05] INFO [log_case_info: case_log.py 16] 实际数据: {
+  "code": "100001", 
+  "data": {
+    "name": "\u5f20\u4e09", 
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+  }, 
+  "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"
+}
+
+[2019-03-20 18:39:05] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:39:05] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 189
+[2019-03-20 18:39:05] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_nomal
+[2019-03-20 18:39:05] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:39:05] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三三", "password": "123456"}
+[2019-03-20 18:39:05] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100000","data":{"name":"张三三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"成功"}
+[2019-03-20 18:39:05] INFO [log_case_info: case_log.py 16] 实际数据: {'code': '100001', 'data': {'name': '张三三', 'password': 'e10adc3949ba59abbe56e057f20f883e'}, 'msg': '失败，用户已存在'}
+[2019-03-20 18:41:58] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:41:58] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-20 18:41:58] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_exist
+[2019-03-20 18:41:58] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:41:58] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-20 18:41:58] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-20 18:41:58] INFO [log_case_info: case_log.py 16] 实际数据: {
+  "code": "100001", 
+  "data": {
+    "name": "\u5f20\u4e09", 
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+  }, 
+  "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"
+}
+
+[2019-03-20 18:41:58] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:41:58] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 189
+[2019-03-20 18:41:58] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_nomal
+[2019-03-20 18:41:58] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:41:58] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三三", "password": "123456"}
+[2019-03-20 18:41:58] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100000","data":{"name":"张三三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"成功"}
+[2019-03-20 18:41:58] INFO [log_case_info: case_log.py 16] 实际数据: {'code': '100001', 'data': {'name': '张三三', 'password': 'e10adc3949ba59abbe56e057f20f883e'}, 'msg': '失败，用户已存在'}
+[2019-03-20 18:47:21] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:47:21] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-20 18:47:21] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_exist
+[2019-03-20 18:47:21] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:47:21] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-20 18:47:21] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-20 18:47:21] INFO [log_case_info: case_log.py 16] 实际数据: {
+  "code": "100001", 
+  "data": {
+    "name": "\u5f20\u4e09", 
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+  }, 
+  "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"
+}
+
+[2019-03-20 18:47:21] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:47:21] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 189
+[2019-03-20 18:47:38] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:47:38] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-20 18:47:38] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_exist
+[2019-03-20 18:47:38] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:47:38] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-20 18:47:38] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-20 18:47:38] INFO [log_case_info: case_log.py 16] 实际数据: {
+  "code": "100001", 
+  "data": {
+    "name": "\u5f20\u4e09", 
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+  }, 
+  "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"
+}
+
+[2019-03-20 18:47:38] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:47:38] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 189
+[2019-03-20 18:49:07] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:49:07] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-20 18:49:07] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_exist
+[2019-03-20 18:49:07] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:49:07] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-20 18:49:07] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-20 18:49:07] INFO [log_case_info: case_log.py 16] 实际数据: {
+  "code": "100001", 
+  "data": {
+    "name": "\u5f20\u4e09", 
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+  }, 
+  "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"
+}
+
+[2019-03-20 18:49:07] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:49:07] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 189
+[2019-03-20 18:49:23] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:49:23] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-20 18:49:23] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_exist
+[2019-03-20 18:49:23] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:49:23] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-20 18:49:23] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-20 18:49:23] INFO [log_case_info: case_log.py 16] 实际数据: {
+  "code": "100001", 
+  "data": {
+    "name": "\u5f20\u4e09", 
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+  }, 
+  "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"
+}
+
+[2019-03-20 18:49:23] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:49:23] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 189
+[2019-03-20 18:49:23] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_nomal
+[2019-03-20 18:49:23] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:49:23] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三三", "password": "123456"}
+[2019-03-20 18:49:23] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100000","data":{"name":"张三三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"成功"}
+[2019-03-20 18:49:23] INFO [log_case_info: case_log.py 16] 实际数据: {'code': '100001', 'data': {'name': '张三三', 'password': 'e10adc3949ba59abbe56e057f20f883e'}, 'msg': '失败，用户已存在'}
+[2019-03-20 18:50:28] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:50:28] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-20 18:50:28] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_exist
+[2019-03-20 18:50:28] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:50:28] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-20 18:50:28] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-20 18:50:28] INFO [log_case_info: case_log.py 16] 实际数据: {
+  "code": "100001", 
+  "data": {
+    "name": "\u5f20\u4e09", 
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+  }, 
+  "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"
+}
+
+[2019-03-20 18:50:28] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:50:28] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 189
+[2019-03-20 18:50:28] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_nomal
+[2019-03-20 18:50:28] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:50:28] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三三", "password": "123456"}
+[2019-03-20 18:50:28] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100000","data":{"name":"张三三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"成功"}
+[2019-03-20 18:50:28] INFO [log_case_info: case_log.py 16] 实际数据: {'code': '100001', 'data': {'name': '张三三', 'password': 'e10adc3949ba59abbe56e057f20f883e'}, 'msg': '失败，用户已存在'}
+[2019-03-20 18:50:40] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:50:40] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-20 18:50:40] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_exist
+[2019-03-20 18:50:40] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:50:40] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-20 18:50:40] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-20 18:50:40] INFO [log_case_info: case_log.py 16] 实际数据: {
+  "code": "100001", 
+  "data": {
+    "name": "\u5f20\u4e09", 
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+  }, 
+  "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"
+}
+
+[2019-03-20 18:50:40] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:50:40] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 189
+[2019-03-20 18:50:40] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_nomal
+[2019-03-20 18:50:40] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:50:40] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三三", "password": "123456"}
+[2019-03-20 18:50:40] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100000","data":{"name":"张三三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"成功"}
+[2019-03-20 18:50:40] INFO [log_case_info: case_log.py 16] 实际数据: {'code': '100001', 'data': {'name': '张三三', 'password': 'e10adc3949ba59abbe56e057f20f883e'}, 'msg': '失败，用户已存在'}
+[2019-03-20 18:52:09] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:52:09] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-20 18:52:09] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_exist
+[2019-03-20 18:52:09] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:52:09] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-20 18:52:09] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-20 18:52:09] INFO [log_case_info: case_log.py 16] 实际数据: {
+  "code": "100001", 
+  "data": {
+    "name": "\u5f20\u4e09", 
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+  }, 
+  "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"
+}
+
+[2019-03-20 18:52:09] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:52:09] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 189
+[2019-03-20 18:53:15] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:53:15] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-20 18:53:15] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_exist
+[2019-03-20 18:53:15] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:53:15] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-20 18:53:15] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-20 18:53:15] INFO [log_case_info: case_log.py 16] 实际数据: {
+  "code": "100001", 
+  "data": {
+    "name": "\u5f20\u4e09", 
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+  }, 
+  "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"
+}
+
+[2019-03-20 18:53:15] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:53:15] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 189
+[2019-03-20 18:53:15] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_nomal
+[2019-03-20 18:53:15] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:53:15] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三三", "password": "123456"}
+[2019-03-20 18:53:15] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100000","data":{"name":"张三三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"成功"}
+[2019-03-20 18:53:15] INFO [log_case_info: case_log.py 16] 实际数据: {'code': '100001', 'data': {'name': '张三三', 'password': 'e10adc3949ba59abbe56e057f20f883e'}, 'msg': '失败，用户已存在'}
+[2019-03-20 18:54:51] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:54:51] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-20 18:54:51] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_exist
+[2019-03-20 18:54:51] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:54:51] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-20 18:54:51] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-20 18:54:51] INFO [log_case_info: case_log.py 16] 实际数据: {
+  "code": "100001", 
+  "data": {
+    "name": "\u5f20\u4e09", 
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+  }, 
+  "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"
+}
+
+[2019-03-20 18:54:51] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:54:51] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 153
+[2019-03-20 18:54:51] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_nomal
+[2019-03-20 18:54:51] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:54:51] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张四三", "password": "123456"}
+[2019-03-20 18:54:51] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100000","data":{"name":"张四三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"成功"}
+[2019-03-20 18:54:51] INFO [log_case_info: case_log.py 16] 实际数据: {'code': '100000', 'data': {'name': '张四三', 'password': 'e10adc3949ba59abbe56e057f20f883e'}, 'msg': '成功'}
+[2019-03-20 18:58:15] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:58:15] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-20 18:58:15] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_exist
+[2019-03-20 18:58:15] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:58:15] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-20 18:58:15] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-20 18:58:15] INFO [log_case_info: case_log.py 16] 实际数据: {
+  "code": "100001", 
+  "data": {
+    "name": "\u5f20\u4e09", 
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+  }, 
+  "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"
+}
+
+[2019-03-20 18:58:15] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:58:15] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 189
+[2019-03-20 18:58:15] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_nomal
+[2019-03-20 18:58:15] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:58:15] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张四三", "password": "123456"}
+[2019-03-20 18:58:15] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100000","data":{"name":"张四三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"成功"}
+[2019-03-20 18:58:15] INFO [log_case_info: case_log.py 16] 实际数据: {'code': '100001', 'data': {'name': '张四三', 'password': 'e10adc3949ba59abbe56e057f20f883e'}, 'msg': '失败，用户已存在'}
+[2019-03-20 18:59:55] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:59:55] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-20 18:59:55] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_exist
+[2019-03-20 18:59:55] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:59:55] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-20 18:59:55] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-20 18:59:55] INFO [log_case_info: case_log.py 16] 实际数据: {
+  "code": "100001", 
+  "data": {
+    "name": "\u5f20\u4e09", 
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+  }, 
+  "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"
+}
+
+[2019-03-20 18:59:55] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-20 18:59:56] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 189
+[2019-03-20 18:59:56] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_nomal
+[2019-03-20 18:59:56] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-20 18:59:56] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张四三", "password": "123456"}
+[2019-03-20 18:59:56] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张四三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-20 18:59:56] INFO [log_case_info: case_log.py 16] 实际数据: {'code': '100001', 'data': {'name': '张四三', 'password': 'e10adc3949ba59abbe56e057f20f883e'}, 'msg': '失败，用户已存在'}
+[2019-03-21 10:54:29] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-21 10:54:29] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-21 10:54:29] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_exist
+[2019-03-21 10:54:29] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-21 10:54:29] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-21 10:54:29] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-21 10:54:29] INFO [log_case_info: case_log.py 16] 实际数据: {
+  "code": "100001", 
+  "data": {
+    "name": "\u5f20\u4e09", 
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+  }, 
+  "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"
+}
+
+[2019-03-21 10:54:29] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-21 10:54:29] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 189
+[2019-03-21 10:54:29] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_nomal
+[2019-03-21 10:54:29] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-21 10:54:29] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张四三", "password": "123456"}
+[2019-03-21 10:54:29] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张四三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-21 10:54:29] INFO [log_case_info: case_log.py 16] 实际数据: {'code': '100001', 'data': {'name': '张四三', 'password': 'e10adc3949ba59abbe56e057f20f883e'}, 'msg': '失败，用户已存在'}
+[2019-03-21 10:54:59] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-21 10:54:59] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-21 10:54:59] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_exist
+[2019-03-21 10:54:59] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-21 10:54:59] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-21 10:54:59] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-21 10:54:59] INFO [log_case_info: case_log.py 16] 实际数据: {
+  "code": "100001", 
+  "data": {
+    "name": "\u5f20\u4e09", 
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+  }, 
+  "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"
+}
+
+[2019-03-21 10:54:59] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-21 10:54:59] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 189
+[2019-03-21 10:54:59] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_nomal
+[2019-03-21 10:54:59] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-21 10:54:59] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张四三", "password": "123456"}
+[2019-03-21 10:54:59] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张四三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-21 10:54:59] INFO [log_case_info: case_log.py 16] 实际数据: {'code': '100001', 'data': {'name': '张四三', 'password': 'e10adc3949ba59abbe56e057f20f883e'}, 'msg': '失败，用户已存在'}
+[2019-03-21 11:24:44] INFO [<module>: run_all.py 8] ================================== 测试开始 ==================================
+[2019-03-21 11:24:45] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-21 11:24:45] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/login/ HTTP/1.1" 200 21
+[2019-03-21 11:24:45] INFO [log_case_info: case_log.py 12] 测试用例: test_user_login_normal
+[2019-03-21 11:24:45] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/login/
+[2019-03-21 11:24:45] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-21 11:24:45] INFO [log_case_info: case_log.py 15] 期望数据: <h1>登录成功</h1>
+[2019-03-21 11:24:45] INFO [log_case_info: case_log.py 16] 实际数据: <h1>登录成功</h1>
+[2019-03-21 11:24:45] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-21 11:24:45] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/login/ HTTP/1.1" 200 42
+[2019-03-21 11:24:45] INFO [log_case_info: case_log.py 12] 测试用例: test_user_login_wrong
+[2019-03-21 11:24:45] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/login/
+[2019-03-21 11:24:45] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "1234567"}
+[2019-03-21 11:24:45] INFO [log_case_info: case_log.py 15] 期望数据: <h1>失败，用户名或密码错误</h1>
+[2019-03-21 11:24:45] INFO [log_case_info: case_log.py 16] 实际数据: <h1>失败，用户名或密码错误</h1>
+[2019-03-21 11:24:45] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-21 11:24:45] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-21 11:24:45] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_exist
+[2019-03-21 11:24:45] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-21 11:24:45] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-21 11:24:45] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-21 11:24:45] INFO [log_case_info: case_log.py 16] 实际数据: {
+  "code": "100001", 
+  "data": {
+    "name": "\u5f20\u4e09", 
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+  }, 
+  "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"
+}
+
+[2019-03-21 11:24:45] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-21 11:24:45] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 189
+[2019-03-21 11:24:45] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_nomal
+[2019-03-21 11:24:45] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-21 11:24:45] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张四三", "password": "123456"}
+[2019-03-21 11:24:45] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张四三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-21 11:24:45] INFO [log_case_info: case_log.py 16] 实际数据: {'code': '100001', 'data': {'name': '张四三', 'password': 'e10adc3949ba59abbe56e057f20f883e'}, 'msg': '失败，用户已存在'}
+[2019-03-21 11:25:13] INFO [<module>: run_all.py 8] ================================== 测试开始 ==================================
+[2019-03-21 11:25:14] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-21 11:25:14] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/login/ HTTP/1.1" 200 21
+[2019-03-21 11:25:14] INFO [log_case_info: case_log.py 12] 测试用例: test_user_login_normal
+[2019-03-21 11:25:14] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/login/
+[2019-03-21 11:25:14] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-21 11:25:14] INFO [log_case_info: case_log.py 15] 期望数据: <h1>登录成功</h1>
+[2019-03-21 11:25:14] INFO [log_case_info: case_log.py 16] 实际数据: <h1>登录成功</h1>
+[2019-03-21 11:25:14] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-21 11:25:14] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/login/ HTTP/1.1" 200 42
+[2019-03-21 11:25:14] INFO [log_case_info: case_log.py 12] 测试用例: test_user_login_wrong
+[2019-03-21 11:25:14] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/login/
+[2019-03-21 11:25:14] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "1234567"}
+[2019-03-21 11:25:14] INFO [log_case_info: case_log.py 15] 期望数据: <h1>失败，用户名或密码错误</h1>
+[2019-03-21 11:25:14] INFO [log_case_info: case_log.py 16] 实际数据: <h1>失败，用户名或密码错误</h1>
+[2019-03-21 11:25:14] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-21 11:25:14] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-21 11:25:14] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_exist
+[2019-03-21 11:25:14] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-21 11:25:14] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-21 11:25:14] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-21 11:25:14] INFO [log_case_info: case_log.py 16] 实际数据: {
+  "code": "100001", 
+  "data": {
+    "name": "\u5f20\u4e09", 
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+  }, 
+  "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"
+}
+
+[2019-03-21 11:25:14] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-21 11:25:14] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 189
+[2019-03-21 11:25:14] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_nomal
+[2019-03-21 11:25:14] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-21 11:25:14] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张四三", "password": "123456"}
+[2019-03-21 11:25:14] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张四三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-21 11:25:14] INFO [log_case_info: case_log.py 16] 实际数据: {'code': '100001', 'data': {'name': '张四三', 'password': 'e10adc3949ba59abbe56e057f20f883e'}, 'msg': '失败，用户已存在'}
+[2019-03-21 11:25:15] INFO [<module>: run_all.py 17] ================================== 测试结束 ==================================
+[2019-03-21 11:26:51] INFO [<module>: run_all.py 8] ================================== 测试开始 ==================================
+[2019-03-21 11:26:52] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-21 11:26:52] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/login/ HTTP/1.1" 200 21
+[2019-03-21 11:26:52] INFO [log_case_info: case_log.py 12] 测试用例: test_user_login_normal
+[2019-03-21 11:26:52] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/login/
+[2019-03-21 11:26:52] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-21 11:26:52] INFO [log_case_info: case_log.py 15] 期望数据: <h1>登录成功</h1>
+[2019-03-21 11:26:52] INFO [log_case_info: case_log.py 16] 实际数据: <h1>登录成功</h1>
+[2019-03-21 11:26:52] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-21 11:26:52] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/login/ HTTP/1.1" 200 42
+[2019-03-21 11:26:52] INFO [log_case_info: case_log.py 12] 测试用例: test_user_login_wrong
+[2019-03-21 11:26:52] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/login/
+[2019-03-21 11:26:52] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "1234567"}
+[2019-03-21 11:26:52] INFO [log_case_info: case_log.py 15] 期望数据: <h1>失败，用户名或密码错误</h1>
+[2019-03-21 11:26:52] INFO [log_case_info: case_log.py 16] 实际数据: <h1>失败，用户名或密码错误</h1>
+[2019-03-21 11:26:52] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-21 11:26:52] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 183
+[2019-03-21 11:26:52] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_exist
+[2019-03-21 11:26:52] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-21 11:26:52] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张三", "password": "123456"}
+[2019-03-21 11:26:52] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-21 11:26:52] INFO [log_case_info: case_log.py 16] 实际数据: {
+  "code": "100001", 
+  "data": {
+    "name": "\u5f20\u4e09", 
+    "password": "e10adc3949ba59abbe56e057f20f883e"
+  }, 
+  "msg": "\u5931\u8d25\uff0c\u7528\u6237\u5df2\u5b58\u5728"
+}
+
+[2019-03-21 11:26:52] DEBUG [_new_conn: connectionpool.py 208] Starting new HTTP connection (1): 115.28.108.130
+[2019-03-21 11:26:52] DEBUG [_make_request: connectionpool.py 396] http://115.28.108.130:5000 "POST /api/user/reg/ HTTP/1.1" 200 189
+[2019-03-21 11:26:52] INFO [log_case_info: case_log.py 12] 测试用例: test_user_reg_nomal
+[2019-03-21 11:26:52] INFO [log_case_info: case_log.py 13] 测试链接: http://115.28.108.130:5000/api/user/reg/
+[2019-03-21 11:26:52] INFO [log_case_info: case_log.py 14] 发送数据: {"name": "张四三", "password": "123456"}
+[2019-03-21 11:26:52] INFO [log_case_info: case_log.py 15] 期望数据: {"code":"100001","data":{"name":"张四三","password":"e10adc3949ba59abbe56e057f20f883e"},"msg":"失败，用户已存在"}
+[2019-03-21 11:26:52] INFO [log_case_info: case_log.py 16] 实际数据: {'code': '100001', 'data': {'name': '张四三', 'password': 'e10adc3949ba59abbe56e057f20f883e'}, 'msg': '失败，用户已存在'}
+[2019-03-21 11:26:52] INFO [send_email: send_email.py 30] 邮件发送成功!
+[2019-03-21 11:26:52] INFO [<module>: run_all.py 17] ================================== 测试结束 ==================================
