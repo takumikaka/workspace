@@ -7,12 +7,12 @@ from config.config import *
 
 def excel_to_list(sheet_name):
     data_list = []
-    wb = xlrd.open_workbook(data_path)
+    wb = xlrd.open_workbook(data_file)
     sh = wb.sheet_by_name(sheet_name)
     header = sh.row_values(1)
     for i in range(2, sh.nrows):
-        d = dict(zip(header, sh.row_values(i)))
-        data_list.append(d)
+        data = dict(zip(header, sh.row_values(i)))
+        data_list.append(data)
     return data_list
 
 def get_data_case(sheet_name, case_name):
